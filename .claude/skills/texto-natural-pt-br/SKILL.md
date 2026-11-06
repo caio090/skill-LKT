@@ -41,7 +41,7 @@ marca.
 ## Dependências
 
 - `_memoria/preferencias.md` (tom de voz, o que evitar) — ou
-  `clientes/<cliente>/_memoria/preferencias.md` se o texto for de um
+  `workspaces/clientes/<cliente>/_memoria/preferencias.md` se o texto for de um
   cliente específico.
 - `_memoria/marca.md` (se o texto precisar refletir posicionamento).
 
@@ -49,7 +49,7 @@ marca.
 
 - Preferências de tom (geral ou do cliente ativo).
 - Palavras/expressões proibidas registradas em `_memoria/preferencias.md`
-  ou `clientes/<cliente>/_memoria/preferencias.md`.
+  ou `workspaces/clientes/<cliente>/_memoria/preferencias.md`.
 
 ---
 
@@ -58,7 +58,7 @@ marca.
 ### Passo 1 — Ler o texto e o contexto de tom
 
 Carregar preferências de tom relevantes (geral, ou do cliente ativo se
-houver um em `.lkt-system/contexto-ativo.json`).
+houver um em `.lkt-system/estado/contexto-ativo.json`).
 
 ### Passo 2 — Remover os problemas abaixo, nessa ordem de prioridade
 

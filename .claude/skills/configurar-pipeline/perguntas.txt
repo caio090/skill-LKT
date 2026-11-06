@@ -1,0 +1,14 @@
+PERGUNTAS — configurar-pipeline
+
+1. O que será acompanhado (tipo de item: oportunidade, candidato,
+   chamado, outro)?
+2. Quais são as etapas?
+3. Qual o critério para um item entrar em cada etapa?
+4. Qual o critério para um item sair de uma etapa para a próxima?
+5. Quem é o responsável por cada etapa (papel)?
+6. Qual é a próxima ação esperada em cada etapa?
+7. Existe prazo/SLA por etapa?
+8. Como priorizar os itens (o que define alta/média/baixa)?
+9. Existe valor esperado e probabilidade a registrar (uso comercial)?
+10. Que automações são permitidas neste pipeline, e em que nível de
+    autonomia (ver docs/SEGURANCA_E_PERMISSOES.md)?

@@ -1,0 +1,8 @@
+PERGUNTAS — gerar-proposta-a-partir-do-nivel
+
+1. Qual fase comercial faz mais sentido apresentar (estrutura inicial,
+   implantação, evolução, escala futura)?
+2. O nível interno deveria aparecer explicitamente na proposta, ou só
+   a fase comercial?
+3. Já tem preço fechado, ou ainda precisa passar por
+   proposta-e-precificacao?

@@ -38,7 +38,7 @@ específico (cliente ou interno), nunca do LKT System em si.
 
 ## Dependências
 
-- `_memoria/marca.md` ou `clientes/<cliente>/_memoria/marca.md` —
+- `_memoria/marca.md` ou `workspaces/clientes/<cliente>/_memoria/marca.md` —
   identidade visual existente (cores, tipografia, logo, referências).
   **Ler antes de propor qualquer coisa.**
 - `_memoria/preferencias.md` — tom, que também influencia o "tom visual".
@@ -46,7 +46,7 @@ específico (cliente ou interno), nunca do LKT System em si.
 ## Contexto que deve ser carregado
 
 Memória de marca do cliente/projeto ativo (via
-`.lkt-system/contexto-ativo.json`), ou geral se for projeto interno.
+`.lkt-system/estado/contexto-ativo.json`), ou geral se for projeto interno.
 
 ---
 
@@ -136,7 +136,8 @@ marketing) ou `<pasta-do-projeto-ativo>/07-tecnologia/direcao-visual.md`
 
 Depois da direção definida, encaminha pra `pagina-e-site` ou
 `app-e-sistema` implementarem, e ao final pra `texto-natural-pt-br`
-revisar qualquer texto de interface.
+revisar qualquer texto de interface e pra `anti-chat` (quality gate
+final).
 
 ## Exemplos de gatilhos positivos
 

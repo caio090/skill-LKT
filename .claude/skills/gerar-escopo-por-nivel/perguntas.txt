@@ -1,0 +1,6 @@
+PERGUNTAS — gerar-escopo-por-nivel
+
+1. Já existe um perfil de entrega cadastrado pra esse nível em
+   catalogo/perfis-de-entrega/, ou preciso montar um novo?
+2. Existe algo do plano de avanço que deveria ficar como "futuro" em
+   vez de entrar no escopo atual?

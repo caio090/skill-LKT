@@ -85,7 +85,7 @@ Gerar um resumo executivo em prosa (não só bullet points):
 | ... | ... | ... |
 ```
 
-Salvar em `<pasta-do-projeto-ativo>/09-relatorios/analise-[nome]-[data].md` (resolvendo pasta-do-projeto-ativo via `.lkt-system/contexto-ativo.json`), ou em `arquivos/processados/` se não houver projeto ativo. Se o arquivo de origem ainda não passou pela central de arquivos, encaminhar pra `processar-arquivo` também.
+Salvar em `<pasta-do-projeto-ativo>/09-relatorios/analise-[nome]-[data].md` (resolvendo pasta-do-projeto-ativo via `.lkt-system/estado/contexto-ativo.json`), ou em `arquivos/processados/` se não houver projeto ativo. Se o arquivo de origem ainda não passou pela central de arquivos, encaminhar pra `processar-arquivo` também.
 
 Perguntar se quer exportar o resumo em HTML pra compartilhar ou apresentar.
 

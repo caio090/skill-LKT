@@ -1,0 +1,15 @@
+PERGUNTAS — estruturar-pagina-de-oferta
+
+1. Qual a promessa/headline principal?
+2. Qual o público e qual dor específica a oferta resolve?
+3. O que é a oferta, exatamente (o que inclui, o que não inclui)?
+4. Existe expert pessoal? Se sim: nome, papel, biografia, credenciais,
+   fotos/vídeos disponíveis, e existe autorização de imagem confirmada?
+5. Se não houver expert pessoal, qual é o elemento de autoridade
+   (empresa, método, certificação, caso de sucesso)?
+6. Que prova social existe (depoimento, número, avaliação)?
+7. Existe demonstração do produto/serviço disponível?
+8. Existe garantia?
+9. Quais as perguntas frequentes que a página deveria responder?
+10. Qual o CTA principal e qual evento de conversão ele gera
+    (formulário, checkout, agendamento)?

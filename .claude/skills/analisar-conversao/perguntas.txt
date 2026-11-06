@@ -1,0 +1,8 @@
+PERGUNTAS — analisar-conversao
+
+1. Qual funil ou pipeline será analisado?
+2. Qual o período de comparação (mês anterior, mesmo mês do ano
+   passado, outro)?
+3. Existe alguma mudança conhecida no período (nova campanha, nova
+   oferta, mudança de preço, sazonalidade) que possa explicar variação?
+4. Qual etapa o usuário já suspeita que seja o problema (se houver)?

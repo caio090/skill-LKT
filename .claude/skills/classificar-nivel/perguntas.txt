@@ -1,0 +1,11 @@
+PERGUNTAS — classificar-nivel
+
+1. Qual workspace/projeto?
+2. Qual dimensão você quer classificar? (ex.: maturidade digital,
+   financeira, comercial, operacional — ver
+   knowledge/niveis/NIVEIS_E_DIMENSOES.md; se não souber, eu sugiro com
+   base no tipo de projeto)
+3. Já existe diagnóstico feito? Se sim, uso ele como base. Se não,
+   quer que eu rode o diagnóstico primeiro?
+4. Tem alguma evidência específica que eu deveria considerar (contrato,
+   ferramenta ativa, dado financeiro, documento)?

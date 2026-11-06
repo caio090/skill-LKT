@@ -1,0 +1,20 @@
+PERGUNTAS — notebook-lm
+
+1. Qual empresa/cliente? (se ambíguo, listar workspaces disponíveis)
+2. É dossiê da empresa (institucional, permanente) ou de um projeto
+   específico?
+   - Se o usuário disser "tudo": explicar a diferença (dossiê de
+     empresa resume tudo; dossiê de projeto detalha um projeto só) e
+     recomendar a opção certa antes de gerar qualquer coisa.
+3. Se for projeto: qual projeto? (se houver mais de um, listar e
+   perguntar)
+4. É a primeira geração ou uma atualização?
+   - Se atualização: o que mudou desde a última versão (ou deixar o
+     escaneamento de fontes identificar automaticamente)?
+5. Você quer a versão interna, a versão compartilhável, ou as duas?
+   (a compartilhável só é gerada quando pedida explicitamente)
+6. Depois de gerar o dossiê: "Qual resultado você quer obter no
+   NotebookLM?" — proposta, apresentação, diagnóstico, oportunidades,
+   roadmap, plano de ação, projeção, resumo executivo, reunião,
+   relatório, conteúdo, página de vendas, comparação, ou
+   personalizado (ver prompts.md).

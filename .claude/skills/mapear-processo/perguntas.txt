@@ -1,0 +1,14 @@
+PERGUNTAS — mapear-processo
+
+1. Qual o nome e a área deste processo?
+2. Onde ele começa (gatilho inicial) e onde ele termina?
+3. Quais são as entradas (o que é necessário para começar)?
+4. Quais são as etapas, em ordem?
+5. Existe alguma decisão que muda o caminho (ex.: aprovado/reprovado)?
+6. Quem é responsável por cada etapa (papel, não nome)?
+7. Que ferramentas são usadas em cada etapa?
+8. Que arquivo ou artefato cada etapa gera?
+9. Quanto tempo cada etapa leva, hoje?
+10. Onde estão os gargalos conhecidos?
+11. Que riscos existem se uma etapa falhar?
+12. Como saber se o processo está funcionando bem (indicador)?

@@ -1,0 +1,16 @@
+PERGUNTAS — criar-campanha
+
+1. Qual o objetivo desta campanha?
+2. Qual o público?
+3. Qual a oferta?
+4. Quais canais serão usados?
+5. Qual o período (início e fim)?
+6. Qual o orçamento disponível?
+7. Que ativos e conteúdos já existem ou precisam ser produzidos?
+8. Existe uma página de oferta associada?
+9. Qual o CTA principal?
+10. Qual funil está associado (ou precisa ser desenhado)?
+11. Quais métricas e metas definem sucesso?
+12. Quem é responsável por cada papel (estratégico, produção,
+    aprovação)?
+13. Quais dependências e riscos existem?

@@ -1,0 +1,9 @@
+PERGUNTAS — recomendar-nivel
+
+1. Qual é o objetivo real do projeto (o que motiva buscar um nível
+   mais alto)?
+2. Qual o prazo disponível?
+3. Qual o orçamento disponível?
+4. Qual a capacidade de operação (própria e do cliente) pra sustentar
+   um nível mais avançado depois de implantado?
+5. Existe urgência ou risco que deveria pesar na recomendação?

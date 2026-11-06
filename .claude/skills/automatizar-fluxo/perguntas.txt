@@ -1,0 +1,15 @@
+PERGUNTAS — automatizar-fluxo
+
+1. Qual etapa ou tarefa você quer automatizar?
+2. Qual é o gatilho (o que dispara a automação)?
+3. Existe alguma condição que deve ser verdadeira para ela rodar?
+4. Qual é a ação exata que ela deve executar?
+5. Essa ação está na lista de ações sempre críticas
+   (docs/SEGURANCA_E_PERMISSOES.md)? Se sim, confirmação por execução é
+   obrigatória.
+6. Qual nível de autonomia você quer: sugestão, execução assistida,
+   execução com confirmação, ou execução automática limitada?
+7. Existe limite de quantas vezes ou em que janela de tempo ela pode
+   rodar?
+8. Quem é o responsável por papel por esta automação?
+9. O que deve acontecer se ela falhar?

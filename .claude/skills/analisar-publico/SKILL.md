@@ -66,7 +66,7 @@ Diagnóstico e oferta do projeto ativo.
 
 ## Critérios de qualidade
 
-Perfil descrito é rastreável a clientes/comportamento real, não
+Perfil descrito é rastreável a workspaces/clientes/comportamento real, não
 inventado.
 
 ## Critérios de validação

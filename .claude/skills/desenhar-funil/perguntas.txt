@@ -1,0 +1,13 @@
+PERGUNTAS — desenhar-funil
+
+1. Qual é o resultado final que este funil mede?
+2. Qual entidade será contada (visitante, lead, candidato, outra)?
+3. Qual o período de análise?
+4. Quais são as etapas, em ordem?
+5. Qual evento comprova o avanço em cada etapa?
+6. Que dados já existem hoje para preencher isso?
+7. Existe meta definida para taxa de conversão?
+8. Qual a fonte desse dado (ferramenta, planilha, relatório manual)?
+9. Este funil está associado a alguma campanha?
+10. Qual a taxa atual (se souber)?
+11. Qual a taxa que seria considerada um bom resultado (projetada)?

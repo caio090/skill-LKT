@@ -1,0 +1,8 @@
+PERGUNTAS — revisar-nivel
+
+1. O que mudou desde a última avaliação? (novo diagnóstico, marco
+   concluído, dependência resolvida, orçamento, escopo, métrica, fim
+   de fase, ou outro motivo)
+2. Isso afeta qual dimensão especificamente?
+3. Existe alguma recomendação ou proposta já feita com base no nível
+   anterior que precisa ser revisada também?

@@ -1,0 +1,7 @@
+PERGUNTAS — gerar-plano-de-avanco
+
+1. Confirma que quer seguir com o avanço recomendado em
+   recomendar-nivel?
+2. Existe alguma lacuna que já sabe que não quer priorizar agora?
+3. Tem prazo/orçamento específico pra encaixar o plano, além da faixa
+   já projetada?
