@@ -1,0 +1,24 @@
+{
+  "_aviso": "Dados 100% fictícios para exemplos e testes. Nenhum produto, preço, telefone ou cliente real.",
+  "loja": {"nome": "Loja Exemplo de Tênis", "whatsapp": "5500000000000"},
+  "produtos": [
+    {
+      "nome": "Tênis Corrida Modelo A",
+      "categoria": "corrida",
+      "preco": 199.9,
+      "variantes": [
+        {"rotulo": "Preto, 38", "sku": "MODA-PRT-38", "estoque": 3},
+        {"rotulo": "Preto, 39", "sku": "MODA-PRT-39", "estoque": 0},
+        {"rotulo": "Branco, 40", "sku": "MODA-BRA-40", "estoque": 5}
+      ]
+    },
+    {
+      "nome": "Tênis Casual Modelo B",
+      "categoria": "casual",
+      "preco": 149.9,
+      "variantes": [
+        {"rotulo": "Azul, 41", "sku": "MODB-AZU-41", "estoque": 2}
+      ]
+    }
+  ]
+}

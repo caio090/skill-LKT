@@ -1,6 +1,6 @@
 {
  "_gerado_por": "tools/registro.py build — não editar à mão",
- "total": 246,
+ "total": 248,
  "skills": [
   {
    "id": "abrir",
@@ -2381,6 +2381,39 @@
    "duplicata_intencional": null
   },
   {
+   "id": "ecommerce-loja",
+   "nome": "ecommerce-loja",
+   "descricao": "Planeja, audita e especifica uma loja virtual (plataforma pronta, stack própria ou catálogo simples com pedido pelo WhatsApp): produtos, variantes e SKUs, estoque, coleções e fi...",
+   "categoria": "web-design",
+   "caminho": ".claude/skills/ecommerce-loja",
+   "hash_skill_md": "710b661b73bd43b67b702e9f42d09e7d8b3daf0cf05ae68c78eaa9b96a224e72",
+   "hash_arvore": "c28aaef3cb3a7cfb3c457bb72578f130168c2b2a7d711666e980567a74bfb431",
+   "arquivos_licenca": [],
+   "origem_tipo": "autoral",
+   "fonte": "lkt-system",
+   "repositorio": "https://github.com/caio090/skill-LKT",
+   "licenca": null,
+   "evidencia_licenca": "Conteúdo autoral da Lokat. Repositório sem LICENSE na raiz: escolha da licença é decisão do dono (ver docs/licencas.md).",
+   "versao_origem": "1.0.0",
+   "estado_upstream": "nao_aplicavel",
+   "estado": "aprovada",
+   "mecanismo_instalacao": "tools/instalar_lkt.py (cópia controlada para .claude/skills ou .agents/skills)",
+   "dependencias": [],
+   "ambientes": {
+    "claude-code": "formato_valido",
+    "codex": "formato_valido_nao_testado",
+    "chatgpt": "sem_instalacao_local"
+   },
+   "testes": [
+    "tools/validar.js (frontmatter)",
+    "tools/registro.py check"
+   ],
+   "revisao": "2026-11-06",
+   "observacoes": null,
+   "substituta": null,
+   "duplicata_intencional": null
+  },
+  {
    "id": "email-profissional",
    "nome": "email-profissional",
    "descricao": "Rascunha um email profissional a partir de um contexto livre.",
@@ -4395,6 +4428,39 @@
    "caminho": ".claude/skills/qa",
    "hash_skill_md": "3720fd2f9ade125f7a030965ec97a9a6e4fb6a193e65df829ff5a4ee8bc9133e",
    "hash_arvore": "05b89d789f3194f1fbff4bd1e44787cd4d75a0f51d27ddb117adcacae4acba79",
+   "arquivos_licenca": [],
+   "origem_tipo": "autoral",
+   "fonte": "lkt-system",
+   "repositorio": "https://github.com/caio090/skill-LKT",
+   "licenca": null,
+   "evidencia_licenca": "Conteúdo autoral da Lokat. Repositório sem LICENSE na raiz: escolha da licença é decisão do dono (ver docs/licencas.md).",
+   "versao_origem": "1.0.0",
+   "estado_upstream": "nao_aplicavel",
+   "estado": "aprovada",
+   "mecanismo_instalacao": "tools/instalar_lkt.py (cópia controlada para .claude/skills ou .agents/skills)",
+   "dependencias": [],
+   "ambientes": {
+    "claude-code": "formato_valido",
+    "codex": "formato_valido_nao_testado",
+    "chatgpt": "sem_instalacao_local"
+   },
+   "testes": [
+    "tools/validar.js (frontmatter)",
+    "tools/registro.py check"
+   ],
+   "revisao": "2026-11-06",
+   "observacoes": null,
+   "substituta": null,
+   "duplicata_intencional": null
+  },
+  {
+   "id": "qa-e2e-playwright",
+   "nome": "qa-e2e-playwright",
+   "descricao": "Cria e executa testes ponta a ponta com Playwright em ambiente isolado: navegação, formulários, filtros, estados vazios e de erro, mobile e desktop, acessibilidade básica por te...",
+   "categoria": "qualidade-testes",
+   "caminho": ".claude/skills/qa-e2e-playwright",
+   "hash_skill_md": "f109ae8c355888b810f421c909bffa6dbd62acacfd89af7f3b6d8e3a853ce19c",
+   "hash_arvore": "a88ea13db50443b47f0869395d46257944ca1c93afcc42a02021b182779fd0ae",
    "arquivos_licenca": [],
    "origem_tipo": "autoral",
    "fonte": "lkt-system",

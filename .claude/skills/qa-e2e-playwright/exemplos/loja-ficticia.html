@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loja Exemplo de Tênis</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; max-width: 720px; }
+  ul { list-style: none; padding: 0; }
+  li { border-bottom: 1px solid #ddd; padding: 12px 0; }
+  a.cta, button { display: inline-block; min-height: 44px; padding: 10px 16px; }
+  :focus-visible { outline: 3px solid #1a5fb4; outline-offset: 2px; }
+  [hidden] { display: none; }
+</style>
+</head>
+<body>
+<header><h1>Loja Exemplo de Tênis</h1></header>
+<main>
+  <label for="filtro">Categoria</label>
+  <select id="filtro">
+    <option value="">Todas</option>
+    <option value="corrida">Corrida</option>
+    <option value="casual">Casual</option>
+    <option value="trilha">Trilha</option>
+  </select>
+  <ul id="lista"></ul>
+  <p id="vazio" hidden>Nenhum produto nesta categoria.</p>
+</main>
+<script>
+  // Dados fictícios (mesmos do exemplo de ecommerce-loja).
+  const produtos = [
+    { nome: "Tênis Corrida Modelo A", categoria: "corrida", sku: "MODA-PRT-38" },
+    { nome: "Tênis Casual Modelo B", categoria: "casual", sku: "MODB-AZU-41" }
+  ];
+  const lista = document.getElementById("lista");
+  const vazio = document.getElementById("vazio");
+  function render(cat) {
+    lista.innerHTML = "";
+    const itens = produtos.filter(p => !cat || p.categoria === cat);
+    vazio.hidden = itens.length > 0;
+    for (const p of itens) {
+      const li = document.createElement("li");
+      const msg = encodeURIComponent(`Olá! Tem disponível o ${p.nome} - SKU ${p.sku}?`);
+      li.innerHTML = `<h2>${p.nome}</h2><a class="cta" href="https://wa.me/5500000000000?text=${msg}">Consultar disponibilidade de ${p.nome}</a>`;
+      lista.appendChild(li);
+    }
+  }
+  document.getElementById("filtro").addEventListener("change", e => render(e.target.value));
+  render("");
+</script>
+</body>
+</html>
