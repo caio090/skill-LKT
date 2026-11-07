@@ -99,3 +99,53 @@ Status: documento de trabalho na branch `feat/importar-skills-lkt-completas`. N�
 ## 7. Nota de reconciliação
 
 O PR #1 declara 163 skills e já inclui `canvas-design`, `theme-factory` e `web-artifacts-builder`, enquanto o relatório local classificou essas três como futuras candidatas. A verificação da árvore explica a discrepância sem apagar o inventário original. O passo seguinte é comparar arquivo por arquivo, não importar novamente.
+
+---
+
+## 8. Fechamento da rodada de 2026-11-06 (execução no Claude Code)
+
+Branch `feat/importar-skills-lkt-completas`, commits `ec6cbcd`..`HEAD`.
+`main` e produção **não** foram alteradas. Nenhum merge, deploy ou force push.
+
+### Concluído (com evidência)
+
+| Item | Evidência |
+|---|---|
+| Inventário reconciliado 103 × 163 × 244 por hash | `docs/auditorias/RECONCILIACAO-2026-11-06.{md,csv}` |
+| Registro canônico + schema + verificação | `registry/`, `tools/registro.py check` → OK |
+| Catálogo gerado do registro (inclui `qa`) | `docs/catalogo-skills.md`; CI confere com `--catalogo` |
+| 6 candidatas | 3 já presentes conferidas como idênticas ao upstream (`canvas-design`, `theme-factory`, `web-artifacts-builder`); 3 importadas com LICENSE e commit de origem (`ec6cbcd`) |
+| Licença dos 34 terceiros em `.claude/skills` | Todas com arquivo de licença; licença do upstream conferida via API GitHub; 12 idênticas, 18 versão anterior, 4 sem caminho verificável (`registry/fontes.json`) |
+| `ecommerce-loja` com exemplos e testes | `tests/link-whatsapp.test.js` 5/5 |
+| `qa-e2e-playwright` com exemplos e testes | Suíte de exemplo 8/8 (Playwright 1.56.1, desktop + mobile, rede bloqueada) |
+| Instalador: dry-run padrão, seletivo, idempotente, conflito, update, rollback, desinstalação, traversal/symlink | `tests/test_instalador.py` 18/18; Cenário J executado em projeto vazio |
+| React/Vercel: proveniência | `vercel/vercel-plugin`, Apache-2.0; cópia = versão anterior; não promovida |
+| Remotion: decisão de licença separada do framework | `docs/licencas.md`; estado `bloqueada` |
+| Políticas de sandbox Supabase/n8n | `docs/sandbox.md` |
+| Validador: avisos classificados | 56 problemas → 0; 15 avisos, todos de conteúdo de terceiros |
+| README/identidade LKT System, histórico preservado | `README.md`, `docs/MIGRACAO.md` |
+| Segredos | Varredura de padrões (chaves OpenAI/GitHub/AWS/Google/Slack, JWT, chave privada) na árvore e no histórico: 0 ocorrências. `_memoria/` só tem modelos vazios |
+| CI segura | `.github/workflows/validar.yml` (sem deploy, sem segredos) |
+
+### Parcial
+
+- Compatibilidade Codex: formato válido; nenhuma skill executada no Codex nesta rodada.
+- Cenários A, B, D, E, F, G, H, I: definidos em `docs/roteamento.md`, não executados.
+- Windows: não testado.
+- 18 skills de terceiros em versão anterior ao upstream: registradas, não atualizadas.
+
+### Pendente (decisão humana)
+
+- **LICENSE da raiz** para o conteúdo autoral (ou tornar o repositório privado).
+- Plugins Codex `supabase`, `google-drive`, `documents`, `pdf`, `presentations`, `spreadsheets`: texto de licença oficial não localizado.
+- `CLAUDE.md`/`AGENTS.md` ainda citam `modules/` e `templates/` inexistentes.
+- Descrição do PR #1: não atualizada automaticamente (sem `gh` CLI nem token de API nesta máquina). Texto sugerido no relatório da sessão.
+- Submódulo `vendor/kursku-skills` não tem licença: permanece só como referência.
+
+### Bloqueado
+
+- `terceiros/codex/plugins/remotion` (12 skills): conflito entre a LICENSE MIT da cópia e a Remotion License do upstream. Continua no repositório, marcado como `bloqueada`; **remover ou manter é decisão do dono** (o conteúdo já está público no histórico da branch).
+
+### Não aplicável
+
+- Importar Shopify ou plugins proprietários: fora da política.
