@@ -34,6 +34,16 @@ instalar.
 | `nano-banana-2` | agentspace-so/runcomfy-agent-skills | MIT | Geração de imagem (exige conta RunComfy) |
 | `find-skills` | vercel-labs/skills | MIT | Meta: achar skills novas |
 | `reverse-engineer-anything` | morluto/rea | MIT | Engenharia reversa de software |
+| `apple-design` | emilkowalski/skills @ c8a7962 | MIT | Movimento e interface (adicionada 2026-11-06) |
+| `supabase-postgres-best-practices` | supabase/agent-skills @ c9be0e9 | MIT | Banco de dados (adicionada 2026-11-06) |
+| `n8n-workflow-check` | smrht/samautomation-workflows 1.0.0 | MIT | Teste de workflow n8n (promovida de `terceiros/codex`, 2026-11-06) |
+
+`image-edit` e `nano-banana-2`: o repositório `agentspace-so/runcomfy-agent-skills`
+foi movido para `prime-skills/runcomfy-agent-skills` (MIT conferido em 2026-11-06).
+`nano-banana-2` cita a skill irmã `nano-banana-edit`, que não foi importada.
+
+Estado, versão do upstream e hash de cada skill: [`../registry/skills.json`](../registry/skills.json).
+Política de admissão: [`licencas.md`](licencas.md).
 
 As skills dos plugins `marketing` e `design` usam marcadores de conector
 (`~~categoria`); o mapeamento está no `CONNECTORS.md` dentro de cada pasta.

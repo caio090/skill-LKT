@@ -1,11 +1,11 @@
-# REC OS — Sistema operacional interno da Lokat
+# LKT System — Sistema operacional interno da Lokat
 
-O REC OS é o sistema operacional interno de estratégia, marketing, conteúdo,
+O LKT System é o sistema operacional interno de estratégia, marketing, conteúdo,
 vendas, operação e crescimento da Lokat. Não entrega estratégias genéricas:
 antes de recomendar qualquer ação, entende o negócio, o público, a região, a
 oferta, os recursos disponíveis e o objetivo financeiro do cliente em questão.
 
-Este arquivo define como o Claude opera dentro do REC OS — como lê contexto,
+Este arquivo define como o Claude opera dentro do LKT System — como lê contexto,
 encadeia skills, usa a central de arquivos, aprende com correções e mantém
 tudo atualizado.
 
@@ -33,7 +33,7 @@ contexto naturalmente nas respostas e decisões.
 
 ## Módulos
 
-O trabalho do REC OS é organizado em `modules/`, um por área de atuação:
+O trabalho do LKT System é organizado em `modules/`, um por área de atuação:
 
 `diagnostico` · `briefing` · `estrategia` · `posicionamento` ·
 `produtos-e-ofertas` · `paginas-e-sites` · `conteudo` · `trafego-pago` ·
@@ -196,14 +196,55 @@ Usar `templates/` como ponto de partida conforme o tipo de negócio:
 ## Criação de skills
 
 1. Verificar se existe template relevante em `templates/`
-2. Perguntar se a skill é específica do REC OS ou universal
+2. Perguntar se a skill é específica do LKT System ou universal
    (específica → `.claude/skills/nome-da-skill/SKILL.md`;
    universal → `~/.claude/skills/nome-da-skill/SKILL.md`)
 3. Ler `_memoria/empresa.md` e `_memoria/preferencias.md` para calibrar
 4. Se precisar de arquivos de apoio, criar dentro da pasta da skill
 5. Evitar criar duas skills para a mesma tarefa — preferir skills pequenas,
    específicas e combináveis
-6. Atualizar `docs/catalogo-skills.md` e o roteamento
+6. Incluir a skill numa categoria de `registry/fontes.json`, rodar
+   `python3 tools/registro.py build` e `python3 tools/registro.py catalogo`
+   (o catálogo é gerado; não editar à mão) e revisar `docs/roteamento.md`
+7. Skill de terceiros só entra seguindo `docs/licencas.md`
+
+---
+
+## Padrão LKT de design e comunicação
+
+Regra interna de trabalho, transversal a toda entrega visual ou textual. A
+sigla LKT nunca aparece na peça entregue ao cliente.
+
+- Usar a identidade visual oficial do cliente. Nunca redesenhar ou recriar
+  logo por inferência ou memória visual: se o arquivo original não estiver
+  no projeto, pedir.
+- Hierarquia clara entre headline, complemento, CTA e marca.
+- Mobile primeiro: legível no celular, alvos de toque confortáveis, sem
+  rolagem horizontal.
+- Evitar excesso de cards, gradientes e componentes decorativos; nada de
+  aparência genérica de site gerado por IA (`anti-chat` antes de entregar).
+- Texto específico, sem fórmulas prontas e sem prometer resultado comercial
+  sem evidência (`texto-natural-pt-br`).
+- Briefing não é execução aprovada. Não alterar textos, proporções ou
+  identidade além do escopo pedido.
+- Com referências, registrar o que é obrigatório e o que é sugestão.
+- Interface entregue com critérios de aprovação e screenshots (dados
+  fictícios quando houver teste).
+
+---
+
+## Biblioteca, registro e segurança
+
+- Fonte da verdade das skills: `registry/skills.json` (gerado) a partir de
+  `registry/fontes.json` (curadoria). Estados: aprovada, pendente,
+  bloqueada, referência, aposentada. Só `aprovada` é instalada.
+- Projetos recebem skills por `tools/instalar_lkt.py` (simulação por
+  padrão). Ver `README.md`.
+- Ambientes: `docs/compatibilidade.md`. Testes e integrações:
+  `docs/sandbox.md` (nada de produção, cobrança, mensagem real, deploy ou
+  merge automático).
+- Repositório público: nunca commitar `.env`, credenciais, dados de
+  clientes, tabelas de preço internas, dumps ou históricos de sessão.
 
 ---
 
@@ -227,9 +268,9 @@ pendentes e o próximo passo recomendado.
 ## Migração de LKT Plus e MazyOS
 
 `lkt-plus/` e `MazyOS/` são fontes de consulta e migração — nunca alterá-las
-ou apagá-las, e nunca copiá-las inteiras para dentro do REC OS. Antes de
+ou apagá-las, e nunca copiá-las inteiras para dentro do LKT System. Antes de
 migrar qualquer item, informar: arquivo de origem, função, motivo para
-migrar, destino dentro do REC OS, conflitos possíveis, dependências e
-alterações necessárias. Ao migrar: reescrever nomes antigos para REC OS,
+migrar, destino dentro do LKT System, conflitos possíveis, dependências e
+alterações necessárias. Ao migrar: reescrever nomes antigos para LKT System,
 remover referências desnecessárias a MazyOS/LKT Plus, preservar créditos e
 licenças quando exigido, e não depender de skills externas não migradas.

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Instruções de operação do REC OS, no formato padrão `AGENTS.md` para
+Instruções de operação do LKT System, no formato padrão `AGENTS.md` para
 ferramentas de agente que não leem `CLAUDE.md`. Este arquivo é um resumo
 equivalente — a fonte completa e mais detalhada é [`CLAUDE.md`](CLAUDE.md).
 
@@ -17,7 +17,7 @@ equivalente — a fonte completa e mais detalhada é [`CLAUDE.md`](CLAUDE.md).
   `texto-natural-pt-br` ao final.
 - Nunca alterar arquivos originais recebidos em `arquivos/entrada/`.
 - Nunca misturar contexto de um cliente com a memória geral da empresa.
-- Nunca copiar `lkt-plus/` ou `MazyOS/` para dentro do REC OS sem antes
+- Nunca copiar `lkt-plus/` ou `MazyOS/` para dentro do LKT System sem antes
   explicar origem, função, destino, conflitos e dependências.
 - Depois de qualquer alteração estrutural, rodar `tools/validar.js`.
 
