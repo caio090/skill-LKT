@@ -1,0 +1,24 @@
+# Dependências e caches
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Artefatos de teste
+test-results/
+playwright-report/
+blob-report/
+
+# Segredos e ambiente local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Manifesto/backup gerados pelo instalador quando a biblioteca é usada como projeto de teste
+.lkt/

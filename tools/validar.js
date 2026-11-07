@@ -98,10 +98,20 @@ const EXPECTED_REFS = new Set([
   path.join("docs", "manifesto.md"),
   path.join("docs", "roteamento.md"),
   path.join("_memoria", "pendencias.md"),
+  "CHANGELOG.md",
+  path.join("docs", "catalogo-skills.md"),
+  path.join("docs", "skills-terceiros.md"),
+  path.join("docs", "MIGRACAO.md"),
+  path.join("docs", "licencas.md"),
+  // skills que documentam a migração ou foram aposentadas (histórico)
+  path.join(".claude", "skills", "instalar", "SKILL.md"),
+  path.join(".claude", "skills", "validar-sistema", "SKILL.md"),
+  path.join(".claude", "skills", "salvar", "SKILL.md"),
+  path.join(".claude", "skills", "atualizar", "SKILL.md"),
 ]);
 for (const file of allMd) {
   const rel = path.relative(ROOT, file);
-  if (EXPECTED_REFS.has(rel)) {
+  if (EXPECTED_REFS.has(rel) || rel.startsWith(path.join("docs", "auditorias") + path.sep)) {
     continue; // referências esperadas (documentação da migração)
   }
   const content = fs.readFileSync(file, "utf8");
@@ -111,19 +121,46 @@ for (const file of allMd) {
 }
 
 // 4. Links relativos quebrados em Markdown
-const linkPattern = /\]\(([^)]+)\)/g;
+// Conteúdo de terceiros (terceiros/, vendor/ e skills externas do registro) não é
+// editado pelo LKT: link quebrado ali vira aviso, não erro.
+const { extrairLinks } = require("./lib/links.js");
+const externas = new Set();
+const registroPath = path.join(ROOT, "registry", "skills.json");
+if (fs.existsSync(registroPath)) {
+  for (const r of JSON.parse(fs.readFileSync(registroPath, "utf8")).skills) {
+    if (r.origem_tipo === "externa") externas.add(r.caminho + "/");
+  }
+}
+function ehTerceiro(rel) {
+  const posix = rel.split(path.sep).join("/");
+  if (posix.startsWith("terceiros/") || posix.startsWith("vendor/")) return true;
+  for (const prefixo of externas) if (posix.startsWith(prefixo)) return true;
+  return false;
+}
+let linksTerceiros = 0;
 for (const file of allMd) {
   const rel = path.relative(ROOT, file);
   const content = fs.readFileSync(file, "utf8");
-  let m;
-  while ((m = linkPattern.exec(content))) {
-    const target = m[1].split("#")[0].trim();
-    if (!target || /^https?:\/\//.test(target) || /^mailto:/.test(target)) continue;
+  for (const target of extrairLinks(content)) {
     const resolved = path.resolve(path.dirname(file), target);
     if (!fs.existsSync(resolved)) {
-      problems.push(`Link quebrado em ${rel}: ${target}`);
+      if (ehTerceiro(rel)) {
+        linksTerceiros++;
+        warnings.push(`Link quebrado em conteúdo de terceiros (não editado) ${rel}: ${target}`);
+      } else {
+        problems.push(`Link quebrado em ${rel}: ${target}`);
+      }
     }
   }
+}
+
+// 4b. Registro canônico em dia (registry/skills.json e catálogo gerado)
+const { spawnSync } = require("child_process");
+const reg = spawnSync("python3", [path.join(ROOT, "tools", "registro.py"), "check", "--catalogo"], { encoding: "utf8" });
+if (reg.error) {
+  warnings.push("python3 indisponível: verificação do registro não executada");
+} else if (reg.status !== 0) {
+  problems.push("Registro/catálogo inválido ou desatualizado:\n" + (reg.stdout || "") + (reg.stderr || ""));
 }
 
 // 5. Catálogo de skills vs skills reais
@@ -143,7 +180,7 @@ info.push(`Pastas em templates/: ${listDirs(path.join(ROOT, "templates")).length
 info.push(`Skills válidas: ${skillDirs.length - problems.filter((p) => p.includes("Skill sem SKILL.md")).length}`);
 info.push(`Arquivos Markdown lidos: ${allMd.length}`);
 
-console.log("=== REC OS — validação estrutural ===\n");
+console.log("=== LKT System — validação estrutural ===\n");
 console.log("Resumo:");
 for (const line of info) console.log(`  - ${line}`);
 

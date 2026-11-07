@@ -1,0 +1,33 @@
+name: validar
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    # Só validação e testes. Sem deploy, sem merge, sem segredos.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: Registro e catálogo em dia
+        run: python3 tools/registro.py check --catalogo
+      - name: Validador estrutural
+        run: node tools/validar.js
+      - name: Testes do instalador (projetos descartáveis, rede bloqueada)
+        run: python3 -m unittest discover -s tests -v
+      - name: Testes Node (links e exemplo de e-commerce)
+        run: node --test tests/*.test.js
