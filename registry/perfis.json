@@ -1,0 +1,15 @@
+{
+  "_leia": "Perfis são sugestões seletivas, não obrigatórias. Todo perfil recebe também o 'base'. Somente skills com estado 'aprovada' em registry/skills.json podem ser instaladas.",
+  "perfis": {
+    "base": {"descricao": "Texto natural, qualidade, revisão e roteamento", "skills": ["texto-natural-pt-br", "humanizer-pt-br", "anti-chat", "qa", "revisar-codigo", "rotear-tarefa"]},
+    "web": {"descricao": "Páginas, design, arquitetura e SEO", "skills": ["pagina-e-site", "design-front-end", "referencia-site", "frontend-design", "accessibility-review", "app-e-sistema", "seo", "qa-e2e-playwright"]},
+    "app": {"descricao": "Arquitetura, banco, integração, QA e design de sistema", "skills": ["app-e-sistema", "arquitetura-de-software", "planejar-banco-de-dados", "supabase-postgres-best-practices", "integrar-api", "design-front-end", "documentar-sistema", "depurar-erro", "qa-e2e-playwright"]},
+    "ecommerce": {"descricao": "Loja virtual, web, conversão e testes", "skills": ["ecommerce-loja", "pagina-e-site", "design-front-end", "seo", "analisar-conversao", "integrar-api", "qa-e2e-playwright"]},
+    "marketing": {"descricao": "Estratégia, campanhas, conteúdo e anúncios", "skills": ["estrategia-de-marketing", "plano-de-campanha", "calendario-de-conteudo", "pauta-de-conteudo", "carrossel", "anuncio-meta", "anuncio-google", "relatorio-de-marketing"]},
+    "audiovisual": {"descricao": "Briefing, roteiro, edição e motion disponível", "skills": ["briefing-audiovisual", "roteiro-audiovisual", "roteiro", "storyboard", "lista-de-planos", "briefing-de-edicao", "plano-de-distribuicao", "animation-vocabulary"]},
+    "automacao": {"descricao": "Fluxos, APIs, n8n e validação", "skills": ["automacao-fluxos", "automatizar-fluxo", "n8n-workflow-check", "integrar-api", "planejar-banco-de-dados"]},
+    "operacao": {"descricao": "Processos, reuniões, atendimento e relatórios", "skills": ["mapear-processo", "criar-sop", "reuniao-e-ata", "atendimento", "organizar-projeto", "relatorio-executivo"]},
+    "dados": {"descricao": "Leitura, análise e auditoria de bases e planilhas", "skills": ["analisar-dados", "ler-planilha", "auditar-planilha", "criar-planilha"]},
+    "cliente-local": {"descricao": "Diagnóstico, posicionamento e cardápio quando aplicável", "skills": ["diagnostico-negocio", "posicionamento", "analisar-publico", "responder-avaliacoes", "cardapio-digital", "mensagem-whatsapp"]}
+  }
+}
