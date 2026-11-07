@@ -1,0 +1,217 @@
+{
+  "_leia": "Fonte de verdade CURADA (editada à mão) da proveniência, licença, categoria e estado de cada skill. O arquivo registry/skills.json é GERADO a partir deste + da árvore real por `python3 tools/registro.py build`. Valor desconhecido = null ou \"nao_verificado\"; nunca inventar.",
+  "revisao": "2026-11-06",
+  "fontes": {
+    "lkt-system": {
+      "tipo": "autoral",
+      "repositorio": "https://github.com/caio090/skill-LKT",
+      "licenca": null,
+      "evidencia_licenca": "Conteúdo autoral da Lokat. Repositório sem LICENSE na raiz: escolha da licença é decisão do dono (ver docs/licencas.md).",
+      "versao": "1.0.0"
+    },
+    "lkt-plus": {
+      "tipo": "autoral",
+      "repositorio": null,
+      "licenca": null,
+      "evidencia_licenca": "Conteúdo autoral da Lokat (instalação LKT Plus, anterior ao LKT System).",
+      "versao": null
+    },
+    "anthropics/skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/anthropics/skills",
+      "licenca": "Apache-2.0",
+      "evidencia_licenca": "LICENSE.txt dentro da pasta de cada skill, conferido no upstream em 2026-11-06 (o repositório não declara licença na raiz).",
+      "versao": null
+    },
+    "anthropics/knowledge-work-plugins": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/anthropics/knowledge-work-plugins",
+      "licenca": "Apache-2.0",
+      "evidencia_licenca": "API GitHub: license.spdx_id = Apache-2.0 (2026-11-06). Arquivo LICENSE copiado na pasta de cada skill.",
+      "versao": "plugins design/marketing 1.2.0, cowork-plugin-management 0.2.2"
+    },
+    "anthropics/claude-plugins-official": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/anthropics/claude-plugins-official",
+      "licenca": "Apache-2.0",
+      "evidencia_licenca": "API GitHub: Apache-2.0 (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "anthropics/claude-cookbooks": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/anthropics/claude-cookbooks",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "emilkowalski/skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/emilkowalski/skills",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": "apple-design importada do commit c8a79627b59d72d764d6ab6f2c87c09a48169833"
+    },
+    "blader/humanizer": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/blader/humanizer",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": "v3.1.0"
+    },
+    "mackswendhell/humanizer-pt-br": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/mackswendhell/humanizer-pt-br",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "prime-skills/runcomfy-agent-skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/prime-skills/runcomfy-agent-skills",
+      "licenca": "MIT",
+      "evidencia_licenca": "Antigo agentspace-so/runcomfy-agent-skills (redirecionado). API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "vercel-labs/skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/vercel-labs/skills",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "morluto/rea": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/morluto/rea",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na pasta da skill.",
+      "versao": null
+    },
+    "supabase/agent-skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/supabase/agent-skills",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE do repositório copiado na pasta da skill.",
+      "versao": "commit c9be0e931b7930f7d02126d04774d904c381e7d7"
+    },
+    "smrht/samautomation-workflows": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/smrht/samautomation-workflows",
+      "licenca": "MIT",
+      "evidencia_licenca": "API GitHub: MIT (2026-11-06). LICENSE na raiz do plugin e copiado na pasta da skill promovida.",
+      "versao": "1.0.0 (plugin Codex)"
+    },
+    "vercel/vercel-plugin": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/vercel/vercel-plugin",
+      "licenca": "Apache-2.0",
+      "evidencia_licenca": "LICENSE do upstream (Copyright 2026 Vercel, Inc., Apache-2.0) conferido em 2026-11-06 e copiado para terceiros/codex/plugins/vercel/LICENSE.",
+      "versao": "0.54.1 (plugin Codex)"
+    },
+    "openai/skills": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/openai/skills",
+      "licenca": "Apache-2.0",
+      "evidencia_licenca": "Sem licença na raiz do repositório; LICENSE.txt dentro da pasta de cada skill (vercel-deploy: MIT).",
+      "versao": null
+    },
+    "remotion-dev/remotion": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/remotion-dev/remotion",
+      "licenca": "nao_verificado",
+      "evidencia_licenca": "CONFLITO: a cópia do plugin Codex (4.0.534) traz LICENSE MIT, mas o upstream packages/codex-plugin não tem LICENSE e a raiz do repositório usa a 'Remotion License' (não MIT). O repositório remotion-dev/skills também não declara licença. Redistribuição bloqueada até revisão humana.",
+      "versao": "4.0.534 (plugin Codex)"
+    },
+    "supabase-community/supabase-plugin": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/supabase-community/supabase-plugin",
+      "licenca": "nao_verificado",
+      "evidencia_licenca": "A cópia do plugin Codex traz LICENSE MIT, mas o upstream não tem arquivo LICENSE (API GitHub: sem licença, 2026-11-06).",
+      "versao": "1.0.0 (plugin Codex)"
+    },
+    "openai/plugins": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/openai/plugins",
+      "licenca": "nao_verificado",
+      "evidencia_licenca": "plugin.json declara MIT, mas o repositório não tem LICENSE (API GitHub, 2026-11-06) e a pasta não traz texto de licença.",
+      "versao": "google-drive 0.1.22"
+    },
+    "openai/openai-runtime": {
+      "tipo": "externa",
+      "repositorio": "https://github.com/openai/openai (privado)",
+      "licenca": "nao_verificado",
+      "evidencia_licenca": "plugin.json declara MIT; origem privada, impossível conferir. Só `documents` traz LICENSE.txt.",
+      "versao": "26.818.11542"
+    }
+  },
+  "categorias": {
+    "nucleo-operacao": ["abrir", "atualizar", "atualizar-memoria", "continuar-projeto", "fechar-sessao", "instalar", "novo-projeto", "organizar-arquivos", "processar-arquivo", "registrar-prompt", "rotear-ambiente", "rotear-tarefa", "preflight-ambiente", "salvar", "salvar-local", "validar-sistema", "mapear-rotinas", "notebook-lm", "skill-creator", "find-skills", "cowork-plugin-customizer", "create-cowork-plugin"],
+    "diagnostico-estrategia": ["analisar-concorrentes", "analisar-publico", "auditoria-completa", "briefing-completo", "classificar-nivel", "diagnostico-completo", "diagnostico-empresarial", "diagnostico-negocio", "dna-do-negocio", "gerar-escopo-por-nivel", "gerar-plano-de-avanco", "pesquisa-mercado", "plano-estrategico", "posicionamento", "recomendar-nivel", "revisar-nivel", "competitive-brief", "research-synthesis", "user-research"],
+    "comercial-crm": ["atendimento", "configurar-pipeline", "criar-produto-e-oferta", "desenhar-funil", "email-profissional", "estruturar-crm", "funil-de-vendas", "gerar-proposta-a-partir-do-nivel", "mensagem-whatsapp", "onboarding-de-cliente", "proposta-comercial", "proposta-completa", "proposta-e-precificacao", "prospeccao", "qualificar-lead", "script-comercial", "analisar-conversao"],
+    "marketing-conteudo": ["anuncio-google", "anuncio-meta", "aprovar-post", "calendario-de-conteudo", "campanha-completa", "carrossel", "criar-campanha", "estrategia-de-marketing", "pauta-de-conteudo", "plano-de-campanha", "publicar-tema", "relatorio-ads", "relatorio-de-marketing", "responder-avaliacoes", "seo", "brand-review", "campaign-plan", "content-creation", "draft-content", "email-sequence", "performance-report", "seo-audit", "applying-brand-guidelines"],
+    "texto": ["texto-natural-pt-br", "humanizer", "humanizer-pt-br"],
+    "web-design": ["anti-chat", "design-front-end", "estruturar-pagina-de-oferta", "pagina-e-site", "referencia-site", "frontend-design", "web-artifacts-builder", "theme-factory", "accessibility-review", "design-critique", "design-handoff", "design-system", "ux-copy", "emil-design-eng", "ecommerce-loja"],
+    "imagem-motion": ["canvas-design", "image-edit", "nano-banana-2", "animation-vocabulary", "review-animations", "apple-design"],
+    "tecnologia": ["app-e-sistema", "arquitetura-de-software", "auditar-repositorio", "construir-produto-digital", "depurar-erro", "diagnostico-tecnico", "documentar-sistema", "especificacao-de-produto", "integrar-api", "planejar-banco-de-dados", "revisar-codigo", "reverse-engineer-anything", "supabase-postgres-best-practices"],
+    "automacao": ["automacao-fluxos", "automatizar-fluxo", "n8n-workflow-check"],
+    "qualidade-testes": ["qa", "qa-e2e-playwright"],
+    "financeiro": ["auditar-planilha", "cac-e-ltv", "calcular-cmv", "cmv-real-e-teorico", "dre", "fluxo-de-caixa", "gestao-de-negocio", "ler-planilha", "plano-financeiro-completo", "precificacao", "precificacao-food-service", "projecao-financeira", "projecoes", "relatorio-executivo", "relatorio-financeiro", "analyzing-financial-statements", "creating-financial-models"],
+    "food-service": ["analisar-promocao-cupom", "aumento-de-ticket", "cardapio-digital", "engenharia-de-cardapio", "estoque-food-service", "ficha-tecnica", "produto-e-engenharia-de-cardapio", "rendimento-e-desperdicio"],
+    "audiovisual": ["analisar-video", "briefing-audiovisual", "briefing-de-edicao", "direcao-de-cena", "lista-de-planos", "plano-de-captacao", "plano-de-distribuicao", "producao-audiovisual-completa", "roteiro", "roteiro-audiovisual", "storyboard"],
+    "documentos-processos": ["analisar-dados", "criar-apresentacao", "criar-documento", "criar-pdf", "criar-planilha", "criar-sop", "mapear-processo", "organizar-projeto", "reuniao-e-ata"]
+  },
+  "terceiros_em_claude": {
+    "canvas-design": {"fonte": "anthropics/skills", "upstream": "identico"},
+    "theme-factory": {"fonte": "anthropics/skills", "upstream": "identico"},
+    "web-artifacts-builder": {"fonte": "anthropics/skills", "upstream": "identico", "dependencias": ["Node.js", "scripts bash da própria skill"]},
+    "skill-creator": {"fonte": "anthropics/skills", "upstream": "versao_anterior"},
+    "frontend-design": {"fonte": "anthropics/claude-plugins-official", "upstream": "identico"},
+    "accessibility-review": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "design-critique": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "design-handoff": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "design-system": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "research-synthesis": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "user-research": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "identico"},
+    "ux-copy": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "brand-review": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "campaign-plan": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "competitive-brief": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "content-creation": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "identico"},
+    "draft-content": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "email-sequence": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "performance-report": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "seo-audit": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "versao_anterior", "adaptacao": "link ../../CONNECTORS.md -> CONNECTORS.md"},
+    "cowork-plugin-customizer": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "identico"},
+    "create-cowork-plugin": {"fonte": "anthropics/knowledge-work-plugins", "upstream": "identico"},
+    "applying-brand-guidelines": {"fonte": "anthropics/claude-cookbooks", "upstream": "nao_verificado"},
+    "creating-financial-models": {"fonte": "anthropics/claude-cookbooks", "upstream": "nao_verificado"},
+    "analyzing-financial-statements": {"fonte": "anthropics/claude-cookbooks", "upstream": "nao_verificado"},
+    "emil-design-eng": {"fonte": "emilkowalski/skills", "upstream": "versao_anterior"},
+    "animation-vocabulary": {"fonte": "emilkowalski/skills", "upstream": "versao_anterior"},
+    "review-animations": {"fonte": "emilkowalski/skills", "upstream": "versao_anterior"},
+    "apple-design": {"fonte": "emilkowalski/skills", "upstream": "identico"},
+    "humanizer": {"fonte": "blader/humanizer", "upstream": "identico"},
+    "humanizer-pt-br": {"fonte": "mackswendhell/humanizer-pt-br", "upstream": "identico"},
+    "image-edit": {"fonte": "prime-skills/runcomfy-agent-skills", "upstream": "nao_verificado", "dependencias": ["conta RunComfy (autenticação do usuário)"]},
+    "nano-banana-2": {"fonte": "prime-skills/runcomfy-agent-skills", "upstream": "nao_verificado", "dependencias": ["conta RunComfy (autenticação do usuário)"], "observacao": "Cita ../nano-banana-edit, skill irmã não importada."},
+    "find-skills": {"fonte": "vercel-labs/skills", "upstream": "versao_anterior"},
+    "reverse-engineer-anything": {"fonte": "morluto/rea", "upstream": "nao_verificado", "dependencias": ["CLI REA"]},
+    "supabase-postgres-best-practices": {"fonte": "supabase/agent-skills", "upstream": "identico", "observacao": "Somente orientação; nunca aplicar migração em produção a partir da skill (docs/sandbox.md)."},
+    "n8n-workflow-check": {"fonte": "smrht/samautomation-workflows", "upstream": "nao_verificado", "dependencias": ["Python 3"], "duplicata_intencional": "codex.samautomation-workflows/n8n-workflow-check", "observacao": "Promovida de terceiros/codex para uso no Claude Code; cópia idêntica."}
+  },
+  "aposentadas": {
+    "atualizar": {"substituta": "atualizar-memoria", "motivo": "Só cobria 3 dos 13 arquivos de memória (decisão registrada no LKT da Tayannara em 2026-07-26)."},
+    "salvar": {"substituta": "salvar-local", "motivo": "Fazia commit + push automático no GitHub, violando a regra de nunca dar push sem autorização (decisão de 2026-07-26)."}
+  },
+  "terceiros_codex": {
+    "remotion": {"fonte": "remotion-dev/remotion", "estado": "bloqueada"},
+    "vercel": {"fonte": "vercel/vercel-plugin", "estado": "referencia"},
+    "supabase": {"fonte": "supabase-community/supabase-plugin", "estado": "pendente"},
+    "google-drive": {"fonte": "openai/plugins", "estado": "pendente"},
+    "documents": {"fonte": "openai/openai-runtime", "estado": "pendente"},
+    "presentations": {"fonte": "openai/openai-runtime", "estado": "pendente"},
+    "spreadsheets": {"fonte": "openai/openai-runtime", "estado": "pendente"},
+    "pdf": {"fonte": "openai/openai-runtime", "estado": "pendente"},
+    "samautomation-workflows": {"fonte": "smrht/samautomation-workflows", "estado": "referencia"},
+    "_skills_avulsas": {"fonte": "openai/skills", "estado": "referencia"}
+  }
+}

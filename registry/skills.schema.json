@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Registro canônico de skills do LKT System",
+  "description": "Cada item descreve uma skill física versionada. Valores desconhecidos são null ou 'nao_verificado'. Validado por tools/registro.py check (sem dependências).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "nome", "descricao", "categoria", "caminho", "hash_skill_md", "hash_arvore", "arquivos_licenca", "origem_tipo", "fonte", "repositorio", "licenca", "evidencia_licenca", "versao_origem", "estado_upstream", "estado", "mecanismo_instalacao", "dependencias", "ambientes", "testes", "revisao"],
+    "properties": {
+      "id": {"type": "string", "description": "Identificador estável. Skills do Codex usam namespace codex.<plugin>/<skill> ou codex/<skill>."},
+      "nome": {"type": "string"},
+      "descricao": {"type": "string"},
+      "categoria": {"type": ["string", "null"]},
+      "caminho": {"type": "string"},
+      "hash_skill_md": {"type": ["string", "null"]},
+      "hash_arvore": {"type": "string"},
+      "arquivos_licenca": {"type": "array", "items": {"type": "string"}},
+      "origem_tipo": {"enum": ["autoral", "adaptada", "externa"]},
+      "fonte": {"type": "string"},
+      "repositorio": {"type": ["string", "null"]},
+      "licenca": {"type": ["string", "null"]},
+      "evidencia_licenca": {"type": ["string", "null"]},
+      "versao_origem": {"type": ["string", "null"]},
+      "estado_upstream": {"enum": ["identico", "versao_anterior", "nao_verificado", "nao_aplicavel"]},
+      "estado": {"enum": ["aprovada", "candidata", "referencia", "pendente", "bloqueada", "aposentada"]},
+      "mecanismo_instalacao": {"type": ["string", "null"]},
+      "dependencias": {"type": "array", "items": {"type": "string"}},
+      "ambientes": {"type": "object"},
+      "testes": {"type": "array", "items": {"type": "string"}},
+      "revisao": {"type": "string"},
+      "observacoes": {"type": ["string", "null"]},
+      "substituta": {"type": ["string", "null"]},
+      "duplicata_intencional": {"type": ["string", "null"]}
+    }
+  }
+}
