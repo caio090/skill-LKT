@@ -84,8 +84,10 @@ python3 -m unittest discover -s tests -v    # instalador (projetos descartáveis
 node --test tests/*.test.js                 # parser de links e exemplo de e-commerce
 ```
 
-A CI ([`.github/workflows/validar.yml`](.github/workflows/validar.yml)) roda
-os três em cada PR. Não faz deploy nem merge.
+O modelo de CI ([`docs/ci/validar.yml`](docs/ci/validar.yml)) roda
+os três em cada PR. Não faz deploy nem merge. Para ativar, copie o arquivo
+para `.github/workflows/validar.yml` pela interface do GitHub ou com uma
+credencial que tenha o escopo `workflow`.
 
 ## Ambientes
 

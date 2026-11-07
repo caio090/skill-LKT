@@ -18,7 +18,7 @@ Versão estável **não** declarada: há itens bloqueados e pendentes (ver
 - Instalador: `--list`, `--exclude`, `--runtime`, `--check`, `--update`,
   `--uninstall`, `--rollback`, `--json`, manifesto `.lkt/instalacao.json`.
 - Testes: `tests/test_instalador.py` (18), `tests/links.test.js` (9),
-  `tests/link-whatsapp.test.js` (5); CI `.github/workflows/validar.yml`.
+  `tests/link-whatsapp.test.js` (5); modelo de CI `docs/ci/validar.yml` (ativar copiando para `.github/workflows/`).
 - Docs: `licencas.md`, `compatibilidade.md`, `sandbox.md`, `MIGRACAO.md`,
   reconciliação de inventários.
 - `terceiros/codex/plugins/vercel/LICENSE` (Apache-2.0 do upstream).

@@ -125,7 +125,7 @@ Branch `feat/importar-skills-lkt-completas`, commits `ec6cbcd`..`HEAD`.
 | Validador: avisos classificados | 56 problemas → 0; 15 avisos, todos de conteúdo de terceiros |
 | README/identidade LKT System, histórico preservado | `README.md`, `docs/MIGRACAO.md` |
 | Segredos | Varredura de padrões (chaves OpenAI/GitHub/AWS/Google/Slack, JWT, chave privada) na árvore e no histórico: 0 ocorrências. `_memoria/` só tem modelos vazios |
-| CI segura | `.github/workflows/validar.yml` (sem deploy, sem segredos) |
+| CI segura (modelo) | `docs/ci/validar.yml` (sem deploy, sem segredos); ativação pendente, ver abaixo |
 
 ### Parcial
 
@@ -149,3 +149,10 @@ Branch `feat/importar-skills-lkt-completas`, commits `ec6cbcd`..`HEAD`.
 ### Não aplicável
 
 - Importar Shopify ou plugins proprietários: fora da política.
+
+### Nota sobre a CI
+
+O push com `.github/workflows/validar.yml` foi recusado pelo GitHub: o token
+desta máquina não tem o escopo `workflow`. O arquivo foi movido para
+`docs/ci/validar.yml` antes de qualquer envio (o workflow nunca chegou ao
+remoto). Ativação: copiar para `.github/workflows/` pela interface do GitHub.

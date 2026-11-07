@@ -36,5 +36,5 @@ carregou ferramenta ou rodou comando indisponível.
 
 O instalador usa `pathlib` e cópia controlada (sem links simbólicos), então
 funciona em macOS, Linux e Windows. Testado nesta revisão: macOS (Python
-3.9, Node 24). Linux: na CI (`.github/workflows/validar.yml`). Windows: não
+3.9, Node 24). Linux: pelo modelo de CI (`docs/ci/validar.yml`), quando ativado. Windows: não
 testado.

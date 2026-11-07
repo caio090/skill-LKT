@@ -42,7 +42,7 @@ diagnóstico nunca vira alteração em produção.
 ## Deploy e Git
 
 - Nenhuma skill, teste ou CI faz deploy (Vercel ou outro) ou merge.
-- A CI deste repositório roda só validação e testes (`.github/workflows/validar.yml`).
+- A CI deste repositório (modelo em `docs/ci/validar.yml`) roda só validação e testes.
 - Nenhum force push, rebase destrutivo ou reescrita de histórico.
 
 ## Dados de clientes
