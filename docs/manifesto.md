@@ -16,7 +16,7 @@ Colunas:
 
 | Origem | Função | Classificação | Destino | Conflitos/dependências |
 |---|---|---|---|---|
-| — | — | — | — | Nenhum item migrado ainda. Inventário inicial pendente de autorização. |
+| Prompt Vidigal PNG V22 R10 enviado pelo usuário | Processo de design assistido | Adaptar | `.claude/skills/vidigal-png/` | Skill nova, referência integral preservada. R10 prevalece nas regras conflitantes de pesquisa visual. |
 
 ## Itens descartados
 
