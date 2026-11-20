@@ -11,6 +11,7 @@ skill(s) usada(s) e memória consultada.
 | Posicionamento e comunicação | `modules/posicionamento` | _a definir na migração_ | marca, cliente |
 | Produtos, ofertas e modelo de negócio | `modules/produtos-e-ofertas` | _a definir na migração_ | produtos-e-servicos |
 | Páginas, sites, landing pages, portais | `modules/paginas-e-sites` | `pagina-e-site` → `design-front-end` → `texto-natural-pt-br` | marca, cliente |
+| Design gráfico, identidade, social media, arte, imagens, campanhas visuais e edição | `modules/conteudo` | `vidigal-png` | marca, preferencias, cliente, projeto | 
 | Conteúdo, roteiros, campanhas, calendário | `modules/conteudo` | _a definir na migração_ | marca, preferencias, cliente |
 | Tráfego pago | `modules/trafego-pago` | _a definir na migração_ | metricas, cliente |
 | CRM, leads, vendas, atendimento | `modules/crm` | _a definir na migração_ | cliente |
