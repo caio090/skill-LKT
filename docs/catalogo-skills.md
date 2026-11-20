@@ -6,7 +6,7 @@ uma skill for criada, migrada ou removida — ver regra de validação em
 
 | Skill | Descrição | Módulo relacionado | Origem |
 |---|---|---|---|
-| _Nenhuma skill instalada ainda._ | | | |
+| `vidigal-png` | Processo visual V22 R10: briefing, integridade de ativos, pesquisa Pinterest 3x1, direção de arte, tipografia, Anti-Chat e Quality Control | `modules/conteudo` / design visual | Prompt consolidado Vidigal PNG V22 R10 fornecido pelo usuário |
 
 ## Skills obrigatórias em cadeia
 
