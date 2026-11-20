@@ -65,7 +65,7 @@ Antes de executar qualquer tarefa, procurar skill relevante em
 `.claude/skills/`. Se existir, seguir as instruções dela. Quando mais de uma
 skill for necessária, encadear na ordem correta.
 
-Para criação ou alteração de páginas, sites, landing pages, dashboards,
+Para trabalhos de design gráfico, identidade, peças visuais, artes para redes sociais,\ncartazes, anúncios, imagens, produtos e refinamento visual, carregar\n`.claude/skills/vidigal-png/SKILL.md` e sua referência completa V22 R10.\nA pesquisa visual principal segue a atualização R10: Pinterest, termo da\npeça/produto + `social media`, três referências coerentes e fusão criativa.\nPreservar Briefing Lock, Asset Integrity, Anti-Chat e Quality Control.\n\nPara criação ou alteração de páginas, sites, landing pages, dashboards,
 portais ou interfaces, usar obrigatoriamente, nessa ordem:
 
 1. `pagina-e-site`
