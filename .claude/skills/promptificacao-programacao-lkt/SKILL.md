@@ -5,6 +5,12 @@ description: Criar e complementar prompts de programação no padrão LKT, inclu
 
 # Promptificação de programação LKT
 
+## Trabalho orientado à solução
+- Mencionar o problema de forma breve e indicar o resultado esperado; orientar investigação, correção e validação na mesma execução quando autorizadas.
+- Não encerrar no diagnóstico quando for possível avançar com segurança. Se houver bloqueio real, explicar o ponto e seguir com trabalho independente.
+- Destacar resultados e evidências, sem ocultar falhas ou declarar testes não realizados.
+- Manter a Skill LKT e os projetos de destino separados: aplicar a estrutura do prompt sem instruir a integrar ou registrar a skill no projeto.
+
 ## Identificação
 - Iniciar cada prompt nas três primeiras linhas com número, projeto e ação concreta, para identificar o pedido na visualização recolhida.
 - Exemplo: PROMPT 07 | LOKAT OS | ENTRADA E JORNADA DO CLIENTE
