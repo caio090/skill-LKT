@@ -33,5 +33,7 @@ description: Criar e complementar prompts de programação no padrão LKT, inclu
 - Distinguir implementado de validado, e indicar evidência, teste, limitação e motivo para cada achado relevante.
 - Apresentar o que entrou, o que não entrou, prioridades e próximos passos; incluir responsável e prazo apenas se conhecidos.
 - Não declarar corrigido, publicado ou testado sem evidência.
-- Quando a execução for do Codex Web, iniciar e encerrar o relatório com RELATÓRIO CODEX WEB.
+- Identificar corretamente a ferramenta executora. Para Claude Code, iniciar e encerrar com RELATÓRIO CLAUDE CODE; usar RELATÓRIO CODEX WEB apenas para Codex Web.
+- Ao receber relatório de execução, auditar suas afirmações no repositório correto do projeto: commit, arquivos e diff quando disponíveis; distinguir o que o GitHub comprova do que exige banco, deploy ou testes. Não confundir o repositório da skill com o do produto.
+- Para trabalhos no Claude Code, usar a interface web quando houver acesso autorizado, preservando o fluxo existente; não alegar operação realizada sem confirmação.
 - Adaptar a apresentação ao meio disponível; não afirmar que um painel visual foi criado quando o resultado for apenas textual.
