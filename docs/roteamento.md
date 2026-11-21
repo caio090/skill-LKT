@@ -16,6 +16,7 @@ skill(s) usada(s) e memória consultada.
 | Tráfego pago | `modules/trafego-pago` | _a definir na migração_ | metricas, cliente |
 | CRM, leads, vendas, atendimento | `modules/crm` | _a definir na migração_ | cliente |
 | Financeiro (CAC, LTV, ROI, ROAS, margem) | `modules/financeiro` | _a definir na migração_ | metricas |
+| Prompts de programação e relatórios de execução | `modules/operacional` | `promptificacao-programacao-lkt` | preferencias, cliente, projeto |
 | Operação e processos internos | `modules/operacional` | _a definir na migração_ | processos, equipe |
 | Automações e WhatsApp | `modules/automacoes` | _a definir na migração_ | ferramentas, processos |
 | Análise de dados e relatórios | `modules/dados-e-relatorios` | _a definir na migração_ | metricas |
