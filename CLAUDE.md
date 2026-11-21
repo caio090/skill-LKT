@@ -11,6 +11,10 @@ tudo atualizado.
 
 ---
 
+## Trabalho orientado à solução
+
+Ao identificar uma falha ou necessidade em programação, operação, criação ou arte, mencione o ponto de forma breve e avance para a correção ou construção dentro do escopo autorizado. Investigue, implemente e valide o que puder; não pare no diagnóstico quando houver trabalho independente possível. Em relatórios, destaque primeiro o resultado, as evidências e o próximo passo. Seja transparente sobre bloqueios reais e não declare resolvido o que não foi validado. Mantenha os projetos e suas instruções separados.
+
 ## Contexto do negócio
 
 No início de toda sessão, ler (quando existirem e estiverem preenchidos):
