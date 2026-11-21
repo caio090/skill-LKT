@@ -8,6 +8,8 @@ uma skill for criada, migrada ou removida — ver regra de validação em
 |---|---|---|---|
 | `vidigal-png` | Processo visual V22 R10: briefing, integridade de ativos, pesquisa Pinterest 3x1, direção de arte, tipografia, Anti-Chat e Quality Control | `modules/conteudo` / design visual | Prompt consolidado Vidigal PNG V22 R10 fornecido pelo usuário |
 
+| `promptificacao-programacao-lkt` | Prompts de programação numerados, contexto, execução, validação e relatório por evidências | `modules/operacional` | Padrão definido pelo usuário |
+
 ## Skills obrigatórias em cadeia
 
 Para páginas, sites, landing pages, dashboards, portais ou interfaces:
