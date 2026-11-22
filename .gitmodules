@@ -7,3 +7,6 @@
 [submodule "vendor/dify"]
 	path = vendor/dify
 	url = https://github.com/langgenius/dify.git
+[submodule "vendor/mazyos"]
+	path = vendor/mazyos
+	url = https://github.com/mazzeoia/MazyOS.git

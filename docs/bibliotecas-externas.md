@@ -6,6 +6,7 @@ As bibliotecas abaixo sao vinculadas por submodulos Git, e nao reescritas. Isso 
 | --- | --- | --- | --- |
 | kursku/skills | https://github.com/kursku/skills | `346c313fd2ec241a088c68274da26c538422568b` (`master`) | Colecao de skills e materiais auxiliares. A origem possui licencas variadas por pasta; verificar individualmente antes de redistribuir. |
 | obra/superpowers | https://github.com/obra/superpowers | `22f0b463e7a5e579904dd6211a520321035526f7` (`main`) | Skills de desenvolvimento, licenca MIT. |
+| mazzeoia/MazyOS | https://github.com/mazzeoia/MazyOS | `83ed079` (versão usada nas instalações da Lokat) | Sistema operacional para Claude Code com 15 skills (marketing, SEO, ads, operação). **Repositório sem licença**: vinculado aqui só como referência; não copiar arquivos dele para este repositório sem autorização do autor. |
 
 ## Clonar a biblioteca completa
 

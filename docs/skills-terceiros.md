@@ -75,3 +75,34 @@ Ver [`../terceiros/codex/README.md`](../terceiros/codex/README.md).
 | `rea-analysis-optimization`, `rea-changelog-update`, `rea-ci-tests-audit`, `rea-tool-design` | Manutenção interna do repositório morluto/rea; não servem fora dele |
 | `cookbook-audit`, `managed_agents/*` | Exemplos do claude-cookbooks, não são skills de uso |
 | `diagnostico-lokat`, `novo-cliente` (LKT Plus) | Contêm tabela de preços interna da Lokat; o núcleo já cobre com `onboarding-de-cliente` e `diagnostico-completo` |
+
+## Skills do núcleo derivadas do MazyOS (pendência de licença)
+
+O MazyOS (https://github.com/mazzeoia/MazyOS) está vinculado em
+`vendor/mazyos` como submódulo. O repositório dele **não tem licença**, o
+que significa que o autor mantém todos os direitos.
+
+Comparação feita em 2026-11-22: 11 skills de `.claude/skills/` têm boa
+parte do texto igual ao das skills de mesmo nome no MazyOS (porcentagem de
+linhas do LKT idênticas às do MazyOS):
+
+| Skill | Linhas iguais |
+|---|---|
+| `atualizar` | 100% |
+| `salvar` | 92% |
+| `seo` | 81% |
+| `carrossel` | 78% |
+| `anuncio-google` | 77% |
+| `relatorio-ads` | 69% |
+| `responder-avaliacoes` | 67% |
+| `publicar-tema` | 66% |
+| `analisar-dados` | 64% |
+| `email-profissional` | 59% |
+| `mapear-rotinas` | 51% |
+
+`instalar`, `abrir`, `novo-projeto` e `aprovar-post` foram reescritas
+(1% a 13% de texto igual).
+
+Pendente: obter autorização do autor (licença no repositório dele ou
+permissão por escrito) ou reescrever essas 11 skills sem reaproveitar o
+texto original. Até lá, a origem delas não é "autoral".
