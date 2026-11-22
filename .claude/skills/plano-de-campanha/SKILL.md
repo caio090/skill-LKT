@@ -26,6 +26,9 @@ marketing já definida.
 
 ## Dependências
 
+- `knowledge/marketing/OPERACAO_DE_CAMPANHAS.md` (rascunho → revisão → publicação pausada → veiculação autorizada)
+- `knowledge/marketing/FUNIS_LANCAMENTOS_E_METRICAS.md` (lançamentos: usar `planejar-lancamento` quando houver fases)
+
 `estrategia-de-marketing`, `criar-produto-e-oferta` (se houver oferta
 específica), `analisar-promocao-cupom` (se houver desconto).
 

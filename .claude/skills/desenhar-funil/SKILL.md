@@ -40,6 +40,7 @@ individuais) ou processo (sem entidade contável). Ver
 
 ## Dependências
 
+- `knowledge/marketing/FUNIS_LANCAMENTOS_E_METRICAS.md` (tipos de funil, evento por etapa, métricas sem meta universal)
 - `schemas/funil.schema.json`, `schemas/etapa.schema.json`,
   `schemas/evento-conversao.schema.json`
 - `templates/funil/FUNIL.txt`

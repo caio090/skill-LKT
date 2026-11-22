@@ -15,6 +15,7 @@ Skill que monta a campanha inteira em CSV pronto pra importar no Google Ads Edit
 
 ## Dependências
 
+- `knowledge/marketing/OPERACAO_DE_CAMPANHAS.md` (importar no Google Ads Editor com campanhas pausadas; ativação só com autorização registrada)
 - **Contexto do negócio:** `_memoria/empresa.md` (produto/serviço, público, região, diferenciais)
 - **Tom de voz:** `_memoria/preferencias.md`
 - **Pesquisa SEO (se existir):** `<pasta-do-projeto-ativo>/04-marketing/seo/01-pesquisa-demanda.md`, `06-google-ads.md` — usar como insumo

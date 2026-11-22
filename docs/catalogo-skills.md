@@ -4,7 +4,7 @@
 > [`registry/skills.json`](../registry/skills.json). Não editar à mão: altere
 > [`registry/fontes.json`](../registry/fontes.json) ou a skill e gere de novo.
 
-Em `.claude/skills/`: **168** skills — 129 do núcleo LKT System, 2 do LKT Plus (aposentadas, mantidas só como histórico) e 37 de terceiros.
+Em `.claude/skills/`: **170** skills — 131 do núcleo LKT System, 2 do LKT Plus (aposentadas, mantidas só como histórico) e 37 de terceiros.
 Em `terceiros/codex/`: **80** skills de referência para o Codex (não instaladas pelo instalador).
 
 Estados: **aprovada** (pode ser instalada) · **pendente** (falta verificar origem/licença) ·
@@ -160,9 +160,11 @@ Origem e licença detalhadas: [`skills-terceiros.md`](skills-terceiros.md) e [`l
 | `criar-campanha` | Gera uma campanha completa — briefing, objetivo, público, oferta, canais, cronograma, ativos, página, conteúdos, orçamento, funil associado, eventos de conversão, metas, plano d... | LKT System | aprovada |
 | `draft-content` | Draft blog posts, social media, email newsletters, landing pages, press releases, and case studies with channel-specific formatting and SEO recommendations. | anthropics/knowledge-work-plugins · Apache-2.0 | aprovada |
 | `email-sequence` | Design and draft multi-email sequences with full copy, timing, branching logic, exit conditions, and performance benchmarks. | anthropics/knowledge-work-plugins · Apache-2.0 | aprovada |
+| `escada-de-valor-e-funil` | Organiza as ofertas de um cliente numa escada de valor (isca, entrada, principal, premium, continuidade) e escolhe ou revisa o tipo de funil para cada uma (captura, WhatsApp loc... | LKT System | aprovada |
 | `estrategia-de-marketing` | Define a estratégia de marketing de um cliente/projeto: objetivos, canais prioritários, mensagem (a partir do posicionamento), verba e cronograma macro — antes de qualquer peça... | LKT System | aprovada |
 | `pauta-de-conteudo` | Detalha uma entrada do calendário de conteúdo em pauta pronta pra produção: ângulo, mensagem-chave, referência, formato específico. | LKT System | aprovada |
 | `performance-report` | Build a marketing performance report with key metrics, trend analysis, wins and misses, and prioritized optimization recommendations. | anthropics/knowledge-work-plugins · Apache-2.0 | aprovada |
+| `planejar-lancamento` | Planeja um lançamento de produto ou serviço para um cliente/projeto (semente, interno, em parceria ou perpétuo), usando a Fórmula de Lançamento de Érico Rocha (adaptação do Prod... | LKT System | aprovada |
 | `plano-de-campanha` | Planeja uma campanha específica (lançamento, sazonal, promocional): objetivo, público, oferta, mensagem, canais, orçamento, cronograma, peças necessárias, responsáveis, métricas... | LKT System | aprovada |
 | `publicar-tema` | Orquestra a criação completa de uma peça de conteúdo SEO + redes sociais a partir de um tema. | LKT System | aprovada |
 | `relatorio-ads` | Gera relatório semanal de performance de anúncios pagos (Google Ads + Meta Ads). | LKT System | aprovada |

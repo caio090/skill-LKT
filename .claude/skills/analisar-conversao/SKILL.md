@@ -32,6 +32,7 @@ com hipótese e recomendação — nunca só o número frio.
 
 ## Dependências
 
+- `knowledge/marketing/FUNIS_LANCAMENTOS_E_METRICAS.md` (fórmula, período, fonte e limitações de cada métrica; gargalo só contra histórico/benchmark do cliente)
 - `schemas/funil.schema.json`, `schemas/pipeline.schema.json`
 - `.claude/skills/projecoes` (quando a análise precisar de projeção)
 

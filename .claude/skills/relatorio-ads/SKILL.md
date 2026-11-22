@@ -15,6 +15,7 @@ Skill que transforma exports brutos das plataformas em relatório executivo que 
 
 ## Dependências
 
+- `knowledge/marketing/FUNIS_LANCAMENTOS_E_METRICAS.md` (atribuição, fuso e moeda da conta; não misturar janelas)
 - **Contexto:** `_memoria/empresa.md`, `_memoria/estrategia.md`
 - **Tom de voz:** `_memoria/preferencias.md`
 - **Inputs:** CSVs do Google Ads e/ou Meta Ads Manager. Print também aceito (transcrever)

@@ -26,6 +26,8 @@ Objetivo, público, orçamento, criativos disponíveis (ou a produzir via
 
 ## Dependências
 
+- `knowledge/marketing/OPERACAO_DE_CAMPANHAS.md` (campanha sai como rascunho; publica pausada; ativação só com autorização registrada)
+
 `estrategia-de-marketing` ou `plano-de-campanha`, `_memoria/empresa.md`,
 `_memoria/preferencias.md`.
 

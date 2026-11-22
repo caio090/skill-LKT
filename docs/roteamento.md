@@ -34,6 +34,10 @@ categoria, descrição, estado) e só abre as skills escolhidas.
 | Loja virtual | `ecommerce-loja` | cadeia de página/site; `qa-e2e-playwright` | `cardapio-digital` (é food service) |
 | SEO | `seo` | `seo-audit` (auditoria técnica pontual) | — |
 | Campanha | `plano-de-campanha` / `campanha-completa` | `campaign-plan` só se pedido em inglês ou formato do plugin | — |
+| Lançamento com fases | `planejar-lancamento` | `escada-de-valor-e-funil`, `desenhar-funil`, `plano-de-campanha` | campanha sazonal sem fases (é `plano-de-campanha`) |
+| Oferta e tipo de funil | `escada-de-valor-e-funil` | `criar-produto-e-oferta` (a oferta em si) | medir taxas (é `desenhar-funil`) |
+| Medir funil / gargalo | `desenhar-funil` → `analisar-conversao` | `funil-de-vendas` (playbook comercial) | escolher formato de funil (é `escada-de-valor-e-funil`) |
+| Anúncio Meta/Google | `anuncio-meta` / `anuncio-google` | `knowledge/marketing/OPERACAO_DE_CAMPANHAS.md` | ativar anúncio ou criar gasto (sempre manual, com autorização) |
 | Conteúdo social | `carrossel`, `publicar-tema` | `content-creation` | — |
 | Crítica de design | `design-front-end` (modo revisão) | `design-critique`, `accessibility-review` | — |
 | Texto natural | `texto-natural-pt-br` | `humanizer-pt-br` (português), `humanizer` (inglês) | — |

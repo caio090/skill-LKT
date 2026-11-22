@@ -1,0 +1,13 @@
+PERGUNTAS — planejar-lancamento
+(perguntar só o que não estiver na memória do cliente)
+
+1. Qual é a oferta? (o que entrega, preço, forma de pagamento, garantia)
+2. Para quem? Qual dor ou desejo ela resolve?
+3. Já existe audiência própria? Quantas pessoas na lista, seguidores, contatos de WhatsApp? (com fonte)
+4. Já houve lançamento antes? Quais números, de onde vieram e em que período?
+5. Quem apresenta os conteúdos? Ao vivo ou gravado?
+6. Quantos clientes a operação consegue atender no período sem cair a qualidade?
+7. Qual verba de mídia está disponível e quem autoriza a veiculação?
+8. Qual a data desejada para abrir e fechar as vendas? Qual fuso?
+9. Rastreamento: há Pixel, API de Conversões, UTMs e CRM funcionando?
+10. Existe restrição legal ou de plataforma no setor (saúde, finanças, promessas)?

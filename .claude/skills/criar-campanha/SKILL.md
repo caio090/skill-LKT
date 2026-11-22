@@ -35,6 +35,7 @@ de uma). Ver `knowledge/projetos/ONTOLOGIA_PROCESSOS_FUNIS_PIPELINES.md`.
 
 ## Dependências
 
+- `knowledge/marketing/OPERACAO_DE_CAMPANHAS.md` (fluxo de aprovação; nunca ativar anúncio nem criar gasto sem autorização)
 - `schemas/campanha.schema.json`, `schemas/funil.schema.json`,
   `schemas/evento-conversao.schema.json`
 - `templates/campanha/CAMPANHA.txt`
