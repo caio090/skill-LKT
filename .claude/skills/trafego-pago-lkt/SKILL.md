@@ -55,6 +55,7 @@ Antes de estruturar uma operação relevante, consultar:
 - references/CRIATIVOS-E-METRICAS.md para análise de criativo e diagnóstico
 - references/TRACKING-CRM-E-REMARKETING.md para rastreamento, leads e fechamento
 - references/FRAMEWORKS-DE-FUNIL.md quando houver lançamento, escada de valor ou arquitetura de funil
+- references/TIPOS-DE-FUNIL-E-MONETIZACAO.md para identificar o modelo comercial e o tipo de funil antes de estruturar mídia
 
 ## Processo operacional
 
