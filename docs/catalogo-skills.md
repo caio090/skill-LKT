@@ -8,9 +8,18 @@ uma skill for criada, migrada ou removida — ver regra de validação em
 |---|---|---|---|
 | `vidigal-png` | Processo visual V22 R10: briefing, integridade de ativos, pesquisa Pinterest 3x1, direção de arte, tipografia, Anti-Chat e Quality Control | `modules/conteudo` / design visual | Prompt consolidado Vidigal PNG V22 R10 fornecido pelo usuário |
 
+| `trafego-pago-lkt` | Planejamento e gestão de tráfego pago: funil, orçamento, Meta Ads, Google Ads, criativos, métricas, tracking, CRM e remarketing | `modules/trafego-pago` | Padrão LKT consolidado com práticas atuais de Meta/Google e decisões do usuário |
+
 | `promptificacao-programacao-lkt` | Prompts de programação numerados, contexto, execução, validação e relatório por evidências | `modules/operacional` | Padrão definido pelo usuário |
 
 ## Skills obrigatórias em cadeia
+
+Para tráfego pago e performance:
+
+1. `trafego-pago-lkt`
+2. `vidigal-png` quando houver criação/refação visual
+3. `texto-natural-pt-br` para copy final ao público
+
 
 Para páginas, sites, landing pages, dashboards, portais ou interfaces:
 
