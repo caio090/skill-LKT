@@ -13,6 +13,7 @@ equivalente — a fonte completa e mais detalhada é [`CLAUDE.md`](CLAUDE.md).
 - Para design gráfico, social media, artes, imagens, identidade e refinamento,
   carregar `vidigal-png` e sua referência integral V22 R10; a pesquisa visual
   principal segue o Pinterest 3x1.
+- Para tráfego pago, Meta Ads, Google Ads, funil, orçamento, tracking, Pixel/CAPI, criativos de performance e remarketing, carregar `trafego-pago-lkt`; com verba enxuta, concentrar estrutura e priorizar o objetivo comercial em vez de pulverizar orçamento.
 - Para páginas, sites, landing pages, dashboards ou interfaces, encadear
   obrigatoriamente `pagina-e-site` → `design-front-end` →
   `texto-natural-pt-br`.
