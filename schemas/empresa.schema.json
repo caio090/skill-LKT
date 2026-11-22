@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Empresa / negócio",
+  "description": "Modelo de negócio de um workspace — usado em _memoria/sistema/empresa.md (nível instalação) ou dentro de workspaces/<tipo>/<slug>/_memoria.json (nível workspace).",
+  "type": "object",
+  "properties": {
+    "identidade_empresarial": {
+      "type": "string"
+    },
+    "modelo_de_negocio": {
+      "type": "string"
+    },
+    "produtos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "servicos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposta_de_valor": {
+      "type": "string"
+    },
+    "canais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unidades": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "parceiros": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fornecedores": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ativos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

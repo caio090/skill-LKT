@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Posição de estoque",
+  "description": "Usado por estoque-food-service. Sempre separado por local (central/cozinha).",
+  "type": "object",
+  "properties": {
+    "item_id": { "type": "string" },
+    "local": { "type": "string", "enum": ["central", "cozinha", "outro"] },
+    "quantidade_disponivel": { "type": "number" },
+    "unidade": { "type": "string" },
+    "custo_unitario": { "type": "number" },
+    "consumo_medio_diario": { "type": ["number", "null"] },
+    "prazo_de_entrega_dias": { "type": ["number", "null"] },
+    "estoque_de_seguranca": { "type": ["number", "null"] },
+    "ponto_de_reposicao": { "type": ["number", "null"] },
+    "cobertura_em_dias": { "type": ["number", "null"] },
+    "ultima_movimentacao": { "type": ["string", "null"], "format": "date" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["item_id", "local", "quantidade_disponivel", "unidade", "custo_unitario", "fonte"]
+}

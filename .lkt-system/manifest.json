@@ -1,0 +1,20 @@
+{
+  "pacote": "LKT System",
+  "descricao": "Manifesto do pacote-fonte. Não é o manifest gerado numa instalação-alvo (esse é criado por tools/instalar-lkt-system.js dentro do projeto de destino).",
+  "gerado_em": "2026-07-27",
+  "componentes": {
+    "skills_dir": ".claude/skills",
+    "modules_dir": "modules",
+    "templates_dir": "templates",
+    "schemas_dir": "schemas",
+    "tools_dir": "tools",
+    "docs_dir": "docs"
+  },
+  "nao_copiar_na_instalacao": [
+    "_backups/",
+    "tests/",
+    "docs/auditorias/",
+    "docs/lotes/",
+    ".git/"
+  ]
+}

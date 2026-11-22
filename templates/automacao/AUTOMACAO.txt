@@ -1,0 +1,32 @@
+AUTOMAÇÃO — <nome>
+
+GATILHO
+...
+
+CONDIÇÃO
+...
+
+AÇÃO
+...
+
+NÍVEL DE AUTONOMIA (0 a 5 — ver docs/SEGURANCA_E_PERMISSOES.md)
+...
+
+ESTA AÇÃO É SEMPRE CRÍTICA? (excluir, enviar em massa, publicar, mover
+valor, etc. — se sim, confirmação obrigatória em toda execução)
+...
+
+LIMITE DE EXECUÇÃO / JANELA DE TEMPO
+...
+
+RESPONSÁVEL POR PAPEL
+...
+
+TRATAMENTO DE ERRO
+...
+
+STATUS INICIAL
+pausada (só ativa após confirmação explícita separada)
+
+ONDE SALVAR
+workspaces/<tipo>/<slug>/[projetos/<projeto>/]05-operacao/AUTOMACOES/

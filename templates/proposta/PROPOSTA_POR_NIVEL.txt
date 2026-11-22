@@ -1,0 +1,43 @@
+PROPOSTA — <nome do cliente/projeto>
+
+
+CONTEXTO
+[o que motivou esse projeto, em 2-3 frases, linguagem simples]
+
+FASE RECOMENDADA
+[estrutura inicial | implantação | evolução | escala futura]
+(o nível interno só aparece aqui se ajudar o cliente a entender —
+senão, usar só o nome da fase)
+
+O QUE VOCÊ VAI RECEBER
+- [entrega obrigatória 1]
+- [entrega obrigatória 2]
+- [entrega recomendada, se houver]
+
+PRAZO
+[prazo estimado, em linguagem clara]
+
+INVESTIMENTO
+[valor fechado — nunca a faixa interna do nível; passar por
+proposta-e-precificacao antes de preencher]
+
+CONDIÇÕES
+[forma de pagamento, o que está incluso na recorrência, se houver]
+
+O QUE NÃO ESTÁ INCLUSO NESTA FASE
+- [item não incluso 1]
+- [item não incluso 2]
+
+POSSIBILIDADES FUTURAS (opcional, não é compromisso)
+- [o que pode vir depois, se fizer sentido pro cliente]
+
+PRÓXIMOS PASSOS
+[o que precisa acontecer pra começar]
+
+
+---
+Nunca incluído neste documento: tarefa técnica interna detalhada, risco
+interno, margem, custo por colaborador, nota confidencial, pontuação
+técnica completa, caso de outro cliente, raciocínio privado. Ver
+knowledge/niveis/NIVEIS_E_PROPOSTAS.md e
+docs/NIVEIS_NA_PROPOSTA_COMERCIAL.md.

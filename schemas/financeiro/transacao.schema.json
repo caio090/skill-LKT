@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Transação financeira",
+  "description": "Formato mínimo de uma linha de entrada ou saída, usado por ler-planilha, auditar-planilha, fluxo-de-caixa e dre para normalizar dados vindos de planilhas diferentes.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "empresa": { "type": "string" },
+    "cliente": { "type": ["string", "null"] },
+    "projeto": { "type": ["string", "null"] },
+    "centro_de_custo": { "type": ["string", "null"] },
+    "tipo": { "type": "string", "enum": ["entrada", "saida"] },
+    "categoria": { "type": "string" },
+    "subcategoria": { "type": ["string", "null"] },
+    "descricao": { "type": "string" },
+    "valor": { "type": "number" },
+    "competencia": { "type": "string", "format": "date", "description": "Mês/ano de competência (regime de competência)" },
+    "vencimento": { "type": ["string", "null"], "format": "date" },
+    "pagamento": { "type": ["string", "null"], "format": "date" },
+    "status": { "type": "string", "description": "Normalizar sempre para minúsculas sem acento antes de comparar (ex.: 'concluido'), evitando o problema de 'Concluído'/'cONCLUÍDO'/'concluído' divergirem" },
+    "conta": { "type": ["string", "null"] },
+    "cliente_ou_fornecedor": { "type": ["string", "null"] },
+    "forma_de_pagamento": { "type": ["string", "null"] },
+    "fonte": { "type": "string", "description": "De onde veio o dado (nome do arquivo original)" },
+    "arquivo_origem": { "type": "string" },
+    "linha_origem": { "type": ["integer", "null"] },
+    "observacoes": { "type": ["string", "null"] }
+  },
+  "required": ["id", "tipo", "categoria", "descricao", "valor", "competencia", "status", "fonte", "arquivo_origem"]
+}

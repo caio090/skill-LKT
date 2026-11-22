@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Workspace",
+  "description": "Registro estruturado de um workspace (cliente, empresa ou grupo) — corresponde a workspaces/<tipo>/<slug>/_memoria.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "criado_em",
+    "identidade",
+    "ultima_atualizacao"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug do workspace. Em evolução para banco de dados, cumpre o papel de workspace_id/tenant_id."
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "cliente",
+        "empresa",
+        "grupo"
+      ]
+    },
+    "criado_em": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "identidade": {
+      "type": "object",
+      "properties": {
+        "nome_exibicao": {
+          "type": "string"
+        },
+        "razao_social": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nome_fantasia": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cnpj": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "segmento": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "localidade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canais": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "site": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "objetivos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "produtos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "servicos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "canais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "papeis": {
+      "type": "array",
+      "description": "Responsáveis por papel — nunca nome fixo sem papel associado.",
+      "items": {
+        "type": "object",
+        "required": [
+          "papel"
+        ],
+        "properties": {
+          "papel": {
+            "type": "string",
+            "description": "Ex.: proprietário do workspace, responsável financeiro, responsável comercial."
+          },
+          "nome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contato": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "projetos": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Slugs dos projetos deste workspace."
+      }
+    },
+    "decisoes": {
+      "type": "array",
+      "items": {
+        "$ref": "memoria.schema.json"
+      }
+    },
+    "hipoteses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pendencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entregaveis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metricas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fontes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ultima_atualizacao": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

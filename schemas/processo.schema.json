@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Processo",
+  "description": "Ver knowledge/projetos/ONTOLOGIA_PROCESSOS_FUNIS_PIPELINES.md antes de instanciar.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "objetivo",
+    "etapas",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "objetivo": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "gatilho_inicial": {
+      "type": "string"
+    },
+    "entradas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "etapa.schema.json"
+      }
+    },
+    "regras": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsaveis_por_papel": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "papel": {
+            "type": "string"
+          },
+          "nome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "ferramentas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "saidas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "indicadores": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "versao": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "rascunho",
+        "ativo",
+        "pausado",
+        "descontinuado"
+      ]
+    }
+  }
+}

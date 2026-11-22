@@ -22,3 +22,18 @@ Thumbs.db
 
 # Manifesto/backup gerados pelo instalador quando a biblioteca é usada como projeto de teste
 .lkt/
+
+# Dado real de cliente/empresa nunca entra no repositório público —
+# só os README.md de cada categoria ficam versionados (regras do Sistema LKT).
+workspaces/clientes/*/
+!workspaces/clientes/README.md
+workspaces/empresas/*/
+!workspaces/empresas/README.md
+workspaces/projetos-internos/*/
+!workspaces/projetos-internos/README.md
+workspaces/**/_teste-tmp/
+.lkt-system/estado/contexto-ativo.local.json
+_backups/
+*.token
+credentials.json
+*.log

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Item de pedido",
+  "type": "object",
+  "properties": {
+    "item_pedido_id": { "type": "string" },
+    "produto_id": { "type": "string" },
+    "combo_id": { "type": ["string", "null"] },
+    "adicionais": { "type": "array", "items": { "type": "string" } },
+    "quantidade": { "type": "number" },
+    "preco_unitario": { "type": "number" },
+    "preco_total": { "type": "number" }
+  },
+  "required": ["item_pedido_id", "produto_id", "quantidade", "preco_unitario", "preco_total"]
+}

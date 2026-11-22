@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Campanha",
+  "description": "Usado por aumento-de-ticket, analisar-promocao-cupom e campanha-completa (módulo de marketing).",
+  "type": "object",
+  "properties": {
+    "campanha_id": { "type": "string" },
+    "nome": { "type": "string" },
+    "objetivo": { "type": "string" },
+    "canais": { "type": "array", "items": { "type": "string" } },
+    "cupom_id": { "type": ["string", "null"] },
+    "orcamento": { "type": ["number", "null"] },
+    "periodo_inicio": { "type": "string", "format": "date" },
+    "periodo_fim": { "type": ["string", "null"], "format": "date" },
+    "resultado": { "type": ["string", "null"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["campanha_id", "nome", "objetivo", "periodo_inicio", "fonte"]
+}

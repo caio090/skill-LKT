@@ -1,0 +1,89 @@
+INICIAR AQUI
+
+
+Conte do seu jeito o que você quer organizar ou criar.
+
+Você pode escrever, colar mensagens, anexar documentos, colocar prints
+na pasta indicada ou gravar um áudio. Não precisa saber os termos
+técnicos. O Sistema LKT organiza as informações, mostra o que já está
+claro, aponta o que falta e monta a estrutura do projeto.
+
+Se preferir, responda às perguntas abaixo, um bloco de cada vez.
+
+
+BLOCO A — QUEM ESTÁ USANDO
+
+- Você está organizando uma empresa, vários clientes, ou um grupo de
+  empresas?
+- O trabalho é para a sua própria organização ou para terceiros?
+- Já existe uma estrutura ou você está começando agora do zero?
+
+(Isso define o modo de uso: empresa única, agência/consultoria, ou
+grupo/holding — ver SISTEMA_LKT.txt. Dá para mudar depois.)
+
+
+BLOCO B — IDENTIDADE
+
+- Nome de exibição
+- Razão social (se existir)
+- Nome fantasia
+- CNPJ (se aplicável)
+- Segmento
+- Localidade
+- Canais (Instagram, site, WhatsApp...)
+- Site
+- Quem responde por cada parte (comercial, financeiro, operação...) —
+  não precisa ser nome próprio, pode ser só o papel
+
+
+BLOCO C — O QUE VOCÊ QUER FAZER AGORA
+
+- Organizar a empresa
+- Começar um projeto
+- Criar um produto
+- Criar um serviço
+- Criar um infoproduto
+- Estruturar marketing
+- Organizar o financeiro
+- Criar um site
+- Criar uma landing page
+- Estruturar o atendimento
+- Estruturar as vendas
+- Organizar a logística
+- Montar uma proposta
+- Precificar algo
+- Projetar cenários
+- Documentar como a operação funciona hoje
+- Outra coisa (conte com suas palavras)
+
+
+BLOCO D — MATERIAL QUE JÁ EXISTE
+
+Documentos, planilhas, propostas, contratos, prints, links, áudios,
+fotos, vídeos, identidade visual, relatórios, dados financeiros,
+informações de clientes, inventário, processos já escritos — qualquer
+coisa que já exista sobre o assunto ajuda.
+
+Não precisa "anexar o arquivo" de forma genérica — o sistema vai
+indicar exatamente em qual pasta colocar cada material. Por exemplo:
+
+  Coloque o documento original em:
+  workspaces/clientes/nome-do-cliente/00-contexto/entrada/
+
+(O caminho exato depende do que já foi criado na conversa — pergunte
+se não souber onde colocar algo.)
+
+
+DEPOIS DISSO
+
+O sistema organiza o que foi contado, mostra o que já está claro e o
+que falta, e monta só a estrutura necessária para o seu caso — nunca
+cria pastas ou módulos que você não vai usar.
+
+Primeiro comando recomendado, se preferir começar direto:
+
+  "Quero organizar uma empresa"
+
+ou
+
+  /iniciar

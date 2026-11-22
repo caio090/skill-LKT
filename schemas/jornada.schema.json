@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Jornada",
+  "description": "Experiência completa da pessoa ao longo do relacionamento com a empresa.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "fases"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "fases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nome"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "o_que_a_pessoa_pensa": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "o_que_precisa": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "duvidas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pontos_de_contato": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "barreiras": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

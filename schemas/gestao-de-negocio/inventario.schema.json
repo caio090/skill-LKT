@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Inventário",
+  "description": "Usado por estoque-food-service para registrar contagem física vs. esperada.",
+  "type": "object",
+  "properties": {
+    "inventario_id": { "type": "string" },
+    "item_id": { "type": "string" },
+    "local": { "type": "string", "enum": ["central", "cozinha", "outro"] },
+    "estoque_fisico": { "type": "number" },
+    "estoque_esperado": { "type": "number" },
+    "divergencia": { "type": "number", "description": "estoque_fisico − estoque_esperado" },
+    "valor_da_divergencia": { "type": "number", "description": "divergencia × custo_unitario" },
+    "data": { "type": "string", "format": "date" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["inventario_id", "item_id", "local", "estoque_fisico", "estoque_esperado", "divergencia", "data", "fonte"]
+}

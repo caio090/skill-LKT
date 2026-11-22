@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Movimento de estoque",
+  "description": "Usado por estoque-food-service. Transferência de saída nunca pode criar saldo negativo silenciosamente — validar contra a posição de estoque antes de aplicar.",
+  "type": "object",
+  "properties": {
+    "movimento_id": { "type": "string" },
+    "item_id": { "type": "string" },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "compra", "transferencia_entrada", "transferencia_saida", "consumo_producao",
+        "desperdicio", "vencimento", "refeicao_equipe", "cortesia", "correcao",
+        "devolucao_fornecedor", "ajuste_manual"
+      ]
+    },
+    "local": { "type": "string", "enum": ["central", "cozinha", "outro"] },
+    "quantidade": { "type": "number" },
+    "unidade": { "type": "string" },
+    "data": { "type": "string", "format": "date" },
+    "responsavel": { "type": ["string", "null"] },
+    "observacoes": { "type": ["string", "null"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["movimento_id", "item_id", "tipo", "local", "quantidade", "data", "fonte"]
+}

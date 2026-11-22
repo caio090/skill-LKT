@@ -1,0 +1,5 @@
+{
+  "_comentario": "Matriz de capacidades do Sistema LKT. Estado só muda por evidência real (preflight-ambiente), nunca por suposição. Estados: REAL, PARTIAL, DEMO, COMING_SOON, NOT_IMPLEMENTED, UNAVAILABLE.",
+  "schema_versao": "1.0.0",
+  "integracoes": []
+}

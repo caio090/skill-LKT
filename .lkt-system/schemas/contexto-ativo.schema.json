@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contexto ativo do Sistema LKT",
+  "description": "Registro local do que está em foco na sessão atual. Nunca contém segredos, tokens ou credenciais.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "modo_de_uso": {
+      "type": ["string", "null"],
+      "enum": ["empresa-unica", "agencia", "grupo", null],
+      "description": "Modo de uso escolhido no onboarding desta instalação. Ver docs/MODOS_DE_USO.md."
+    },
+    "workspace_ativo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo": {
+          "type": ["string", "null"],
+          "enum": ["clientes", "empresas", "projetos-internos", null],
+          "description": "Qual raiz de workspaces/ contém o workspace em foco."
+        },
+        "slug": {
+          "type": ["string", "null"],
+          "description": "Slug do workspace em foco (pasta em workspaces/<tipo>/<slug>/), ou null."
+        }
+      },
+      "required": ["tipo", "slug"]
+    },
+    "projeto_ativo": {
+      "type": ["string", "null"],
+      "description": "Slug do projeto em foco dentro do workspace ativo, ou null."
+    },
+    "ultima_sessao": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Data/hora ISO 8601 da última vez que salvar-local rodou."
+    },
+    "arquivos_recentes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Caminhos relativos dos últimos arquivos criados/modificados, mais recente primeiro. Manter no máximo ~20 entradas."
+    },
+    "decisoes_recentes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Resumo curto (uma linha) das últimas decisões registradas, mais recente primeiro. Manter no máximo ~20 entradas."
+    }
+  },
+  "required": ["modo_de_uso", "workspace_ativo", "projeto_ativo", "ultima_sessao", "arquivos_recentes", "decisoes_recentes"]
+}

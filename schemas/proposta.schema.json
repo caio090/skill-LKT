@@ -1,0 +1,182 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Proposta",
+  "description": "Resultado da skill proposta-e-precificacao.",
+  "type": "object",
+  "required": [
+    "projeto_id",
+    "escopo",
+    "composicao_preco",
+    "preco_final"
+  ],
+  "properties": {
+    "projeto_id": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "object",
+      "properties": {
+        "o_que": {
+          "type": "string"
+        },
+        "por_que": {
+          "type": "string"
+        },
+        "o_que_entrega": {
+          "type": "string"
+        },
+        "formato_entrega": {
+          "type": "string"
+        },
+        "prazo": {
+          "type": "string"
+        },
+        "responsabilidades": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "limites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencias": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "itens_nao_incluidos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "condicoes_de_continuidade": {
+          "type": "string"
+        }
+      }
+    },
+    "composicao_preco": {
+      "type": "object",
+      "properties": {
+        "estrategia": {
+          "type": "number"
+        },
+        "producao": {
+          "type": "number"
+        },
+        "tecnologia": {
+          "type": "number"
+        },
+        "operacao": {
+          "type": "number"
+        },
+        "gestao": {
+          "type": "number"
+        },
+        "risco": {
+          "type": "number"
+        },
+        "margem": {
+          "type": "number"
+        },
+        "despesas_externas": {
+          "type": "number"
+        },
+        "desconto_aprovado": {
+          "type": "number"
+        },
+        "aprovado_por_papel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "separacao": {
+      "type": "object",
+      "properties": {
+        "implantacao": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "recorrencia": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "manutencao": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "servico_avulso": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "custo_de_terceiro": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "midia": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "hospedagem": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dominio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "licenca": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "imposto_estimado": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "contingencia": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "contrapartida": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "preco_final": {
+      "type": "number"
+    }
+  }
+}

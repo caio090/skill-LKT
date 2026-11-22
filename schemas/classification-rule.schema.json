@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regra de classificação",
+  "description": "Condição que usa evidência para sugerir um nível. Ver knowledge/niveis/REGRAS_DE_CLASSIFICACAO.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "dimensao",
+    "criterio",
+    "condicao",
+    "resultado",
+    "confianca",
+    "versao"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "dimensao": {
+      "type": "string"
+    },
+    "criterio": {
+      "type": "string"
+    },
+    "evidencia": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "documento",
+          "entrevista",
+          "diagnostico",
+          "dado-financeiro",
+          "metrica",
+          "processo-existente",
+          "ferramenta-ativa",
+          "contrato",
+          "resultado",
+          "observacao",
+          "arquivo",
+          "resposta-do-usuario",
+          "integracao",
+          "historico"
+        ]
+      }
+    },
+    "peso": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "condicao": {
+      "type": "string",
+      "description": "Descrição legível da condição (ex.: 'possui CRM ativo E funil documentado')."
+    },
+    "resultado": {
+      "type": "string",
+      "description": "Código do nível sugerido (level-definition.codigo)."
+    },
+    "confianca": {
+      "type": "string",
+      "enum": [
+        "confirmado",
+        "provavel",
+        "parcial",
+        "incerto",
+        "sem-dados"
+      ]
+    },
+    "fonte": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "justificativa": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "versao": {
+      "type": "string"
+    }
+  }
+}

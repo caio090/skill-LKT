@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Transição",
+  "description": "Passagem de uma etapa para outra, dentro de um processo/funil/pipeline.",
+  "type": "object",
+  "required": [
+    "de_etapa",
+    "para_etapa"
+  ],
+  "properties": {
+    "de_etapa": {
+      "type": "string"
+    },
+    "para_etapa": {
+      "type": "string"
+    },
+    "condicao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gatilho": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "automatica": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

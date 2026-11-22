@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Perfil de expert",
+  "description": "Ver knowledge/marketing/EXPERT_E_PAGINA_DE_OFERTA.md. Nunca presumir que toda empresa tem um expert pessoal.",
+  "type": "object",
+  "required": [
+    "nome",
+    "papel",
+    "autorizacao_de_imagem"
+  ],
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "papel": {
+      "type": "string"
+    },
+    "biografia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "experiencia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "credenciais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resultados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fotos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitacoes_de_uso": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "autorizacao_de_imagem": {
+      "type": "boolean",
+      "description": "Nunca usar imagem/vídeo de uma pessoa real sem autorização confirmada."
+    }
+  }
+}

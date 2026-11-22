@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evento de conversão",
+  "description": "Ação que comprova avanço de etapa num funil/pipeline/jornada, com atribuição de origem.",
+  "type": "object",
+  "required": [
+    "id",
+    "nome",
+    "data"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string",
+      "description": "Ex.: formulário enviado, checkout concluído, resposta de quiz."
+    },
+    "data": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "funil_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "campanha_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "origem": {
+      "type": "object",
+      "properties": {
+        "campanha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canal": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conteudo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anuncio": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pagina": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "formulario": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quiz": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "indicacao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evento_offline": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "atendimento": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "regra_de_atribuicao": {
+      "type": "string",
+      "enum": [
+        "primeiro-contato",
+        "ultimo-contato",
+        "manual",
+        "desconhecida"
+      ]
+    }
+  }
+}

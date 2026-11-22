@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pedido",
+  "description": "Contrato genérico de dados para cardapio-digital — qualquer plataforma (própria ou terceiro) é traduzida para este formato por um adaptador, sem exigir plataforma específica.",
+  "type": "object",
+  "properties": {
+    "pedido_id": { "type": "string" },
+    "loja_id": { "type": "string" },
+    "canal_id": { "type": "string" },
+    "cliente_id": { "type": ["string", "null"] },
+    "itens": {
+      "type": "array",
+      "items": { "$ref": "item-pedido.schema.json" }
+    },
+    "cupom_id": { "type": ["string", "null"] },
+    "valor_bruto": { "type": "number" },
+    "descontos": { "type": "number", "default": 0 },
+    "valor_liquido": { "type": "number" },
+    "forma_pagamento": { "type": "string" },
+    "horario": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["novo", "em_preparo", "saiu_para_entrega", "concluido", "cancelado"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["pedido_id", "loja_id", "canal_id", "itens", "valor_bruto", "valor_liquido", "status", "horario", "fonte"]
+}

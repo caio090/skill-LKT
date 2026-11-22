@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cupom",
+  "description": "Usado por analisar-promocao-cupom — separa sempre quem paga o desconto.",
+  "type": "object",
+  "properties": {
+    "cupom_id": { "type": "string" },
+    "codigo": { "type": "string" },
+    "tipo": { "type": "string", "enum": ["percentual", "valor_fixo", "frete_gratis"] },
+    "valor": { "type": "number" },
+    "pago_por": { "type": "string", "enum": ["loja", "plataforma", "compartilhado"] },
+    "percentual_loja": { "type": ["number", "null"], "description": "quando pago_por = compartilhado" },
+    "canal_id": { "type": ["string", "null"] },
+    "vigencia_inicio": { "type": "string", "format": "date" },
+    "vigencia_fim": { "type": ["string", "null"], "format": "date" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["cupom_id", "codigo", "tipo", "valor", "pago_por", "vigencia_inicio", "fonte"]
+}

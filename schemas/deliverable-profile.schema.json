@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Perfil de entrega",
+  "description": "Pacote estrutural ligado a um nível, sem obrigar que todo cliente receba exatamente a mesma proposta. Ver knowledge/niveis/NIVEIS_E_PROPOSTAS.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "nome",
+    "level_definition_id",
+    "obrigatorio",
+    "recomendado",
+    "opcional",
+    "futuro"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "level_definition_id": {
+      "type": "string"
+    },
+    "obrigatorio": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recomendado": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "opcional": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "futuro": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nao_incluso": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fase_comercial": {
+      "type": "string",
+      "enum": [
+        "estrutura-inicial",
+        "implantacao",
+        "evolucao",
+        "escala-futura"
+      ]
+    }
+  }
+}

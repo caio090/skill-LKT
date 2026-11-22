@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Negócio",
+  "description": "Ligado ao DNA do negócio (dna-do-negocio) — dados estruturados de identificação, não substitui o Markdown narrativo do DNA.",
+  "type": "object",
+  "properties": {
+    "negocio_id": { "type": "string" },
+    "nome": { "type": "string" },
+    "segmento": { "type": "string" },
+    "especializacao": { "type": "string", "description": "ex.: food-service, varejo, servicos" },
+    "cidade": { "type": "string" },
+    "regiao": { "type": "string" },
+    "canais": { "type": "array", "items": { "type": "string" } },
+    "capacidade_produtiva": { "type": ["string", "null"] },
+    "horarios": { "type": ["string", "null"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["negocio_id", "nome", "segmento", "fonte"]
+}

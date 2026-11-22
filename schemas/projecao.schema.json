@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Projeção",
+  "description": "Resultado da skill projecoes. Projeção nunca é garantia — sempre separar fato, hipótese, cálculo, recomendação e decisão.",
+  "type": "object",
+  "required": [
+    "tipo",
+    "dados_utilizados",
+    "origem_dados",
+    "periodo",
+    "hipoteses",
+    "nivel_confianca",
+    "data_atualizacao"
+  ],
+  "properties": {
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "financeira",
+        "comercial",
+        "marketing",
+        "operacional",
+        "logistica",
+        "projeto"
+      ]
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "projeto_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dados_utilizados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "origem_dados": {
+      "type": "string"
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "hipoteses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variaveis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitacoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nivel_confianca": {
+      "type": "string",
+      "enum": [
+        "baixo",
+        "medio",
+        "alto"
+      ]
+    },
+    "cenario_conservador": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "cenario_base": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "cenario_agressivo": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gatilhos_revisao": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_atualizacao": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

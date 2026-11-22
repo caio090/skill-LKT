@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Campanha",
+  "description": "Conjunto coordenado de ações, ativos, canais, prazos e orçamento para um objetivo específico.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "objetivo",
+    "inicio",
+    "fim",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "objetivo": {
+      "type": "string"
+    },
+    "publico": {
+      "type": "string"
+    },
+    "oferta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "fim": {
+      "type": "string",
+      "format": "date"
+    },
+    "orcamento": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custos_externos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ativos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conteudos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "paginas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "funil_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "eventos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metricas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsaveis_por_papel": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "papel": {
+            "type": "string"
+          },
+          "nome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "dependencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aprendizados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planejamento",
+        "producao",
+        "aguardando-aprovacao",
+        "ativa",
+        "encerrada"
+      ]
+    }
+  }
+}

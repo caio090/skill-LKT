@@ -1,0 +1,13 @@
+Use exclusivamente as informações do dossiê anexado como fonte
+principal. Crie [ENTREGA] para [PÚBLICO]. Estruture em [FORMATO].
+Diferencie fatos confirmados, hipóteses, projeções, decisões e
+pendências. Não invente números. Quando faltar informação, indique
+claramente a lacuna. Priorize [SEÇÕES]. Ao final, apresente
+recomendações, riscos e próximos passos.
+
+---
+Este é o modelo genérico. A skill notebook-lm gera automaticamente uma
+versão preenchida (PROMPT_NOTEBOOKLM_ATUAL.txt ou
+PROMPT_NOTEBOOKLM_EMPRESA.txt) conforme o resultado escolhido — ver
+.claude/skills/notebook-lm/prompts.md para os mini-prompts prontos
+(proposta, apresentação, oportunidades, roadmap, projeção, reunião).

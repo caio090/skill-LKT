@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Etapa",
+  "description": "Etapa reutilizável dentro de processo, funil ou pipeline.",
+  "type": "object",
+  "required": [
+    "id",
+    "nome",
+    "ordem"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "descricao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "responsavel_papel": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "criterio_entrada": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "criterio_saida": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evento_de_avanco": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Qual evento comprova o avanço desta etapa (ver evento-conversao.schema.json)."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_comentario": "Copie para .lkt-system/config.json dentro da instalação e ajuste. Nunca coloque token, senha ou chave aqui — isso vai em .env, que nunca é lido por skills sem autorização explícita.",
+  "nome_do_sistema": "Sistema LKT",
+  "alertas_padrao": {
+    "ads": {
+      "ctr_queda_percentual": 30,
+      "frequencia_meta_maxima": 3.0,
+      "conversao_minima_search": 0.01,
+      "cpc_alta_percentual": 20,
+      "_comentario": "Defaults do relatorio-ads. Sobrescrever por workspace em workspaces/<tipo>/<slug>/WORKSPACE.txt, seção 'Metas e limiares'."
+    }
+  },
+  "central_de_arquivos": {
+    "calcular_hash": true,
+    "algoritmo_hash": "sha256"
+  }
+}

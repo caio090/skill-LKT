@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regra de automação",
+  "description": "Ver docs/SEGURANCA_E_PERMISSOES.md — toda automação declara nível de autonomia e nunca tem nível 4/5 por padrão.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "gatilho",
+    "acoes",
+    "nivel_autonomia",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "gatilho": {
+      "type": "string"
+    },
+    "condicoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nivel_autonomia": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "0=leitura, 1=sugestão, 2=preparação, 3=execução com confirmação, 4=execução automática limitada, 5=administração."
+    },
+    "requer_confirmacao": {
+      "type": "boolean",
+      "default": true
+    },
+    "limite_de_execucao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "janela_de_tempo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "idempotencia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tentativas": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "tratamento_de_erro": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "log": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsavel_papel": {
+      "type": "string"
+    },
+    "pode_ser_desativada": {
+      "type": "boolean",
+      "default": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ativa",
+        "pausada",
+        "desativada"
+      ]
+    }
+  }
+}

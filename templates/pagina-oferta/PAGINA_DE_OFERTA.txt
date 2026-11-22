@@ -1,0 +1,44 @@
+PÁGINA DE OFERTA — <nome>
+
+HEADLINE / PROMESSA
+...
+
+PÚBLICO E DOR
+...
+
+IMAGEM DO EXPERT (ativo visual — ou elemento de autoridade equivalente:
+empresa, método, certificação, caso)
+...
+Autorização de imagem confirmada? (obrigatório se houver pessoa real)
+...
+
+PROVA SOCIAL
+...
+
+DEMONSTRAÇÃO
+...
+
+SOBRE O EXPERT / SOBRE A EMPRESA
+...
+
+OFERTA (o que inclui, o que não inclui)
+...
+
+FAQ
+...
+
+GARANTIA
+...
+
+CTA
+...
+
+EVENTO DE CONVERSÃO
+(formulário / checkout / agendamento — registrar em
+schemas/evento-conversao.schema.json)
+
+ONDE SALVAR
+workspaces/<tipo>/<slug>/[projetos/<projeto>/]07-entregaveis/PAGINA-DE-OFERTA.md
+
+PRÓXIMO PASSO
+pagina-e-site → design-front-end → texto-natural-pt-br

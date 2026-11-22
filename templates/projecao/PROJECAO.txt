@@ -1,0 +1,47 @@
+PROJEÇÃO — <tipo: financeira | comercial | marketing | operacional | logística | projeto>
+
+
+DADOS UTILIZADOS
+- ...
+
+ORIGEM DOS DADOS
+...
+
+PERÍODO
+...
+
+HIPÓTESES ASSUMIDAS
+- ...
+
+VARIÁVEIS QUE PODEM MUDAR O RESULTADO
+- ...
+
+LIMITAÇÕES
+- ...
+
+NÍVEL DE CONFIANÇA
+baixo | médio | alto — por quê: ...
+
+
+CENÁRIO CONSERVADOR
+...
+
+CENÁRIO BASE
+...
+
+CENÁRIO AGRESSIVO
+...
+
+
+RISCOS
+- ...
+
+QUANDO REVISAR ESTA PROJEÇÃO
+- ...
+
+ÚLTIMA ATUALIZAÇÃO
+...
+
+
+LEMBRETE: isto é uma estimativa, não uma garantia. Separe sempre fato,
+hipótese, cálculo, recomendação e decisão.

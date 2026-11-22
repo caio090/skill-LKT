@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ingrediente",
+  "description": "Usado por ficha-tecnica e rendimento-e-desperdicio.",
+  "type": "object",
+  "properties": {
+    "ingrediente_id": { "type": "string" },
+    "nome": { "type": "string" },
+    "unidade_compra": { "type": "string" },
+    "custo_de_compra": { "type": "number" },
+    "peso_bruto": { "type": "number" },
+    "peso_liquido": { "type": ["number", "null"] },
+    "quantidade_aproveitavel": { "type": ["number", "null"] },
+    "custo_liquido": { "type": ["number", "null"], "description": "custo_de_compra ÷ quantidade_aproveitavel" },
+    "fornecedor": { "type": ["string", "null"] },
+    "data_ultimo_preco": { "type": "string", "format": "date" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["ingrediente_id", "nome", "unidade_compra", "custo_de_compra", "peso_bruto", "fonte"]
+}

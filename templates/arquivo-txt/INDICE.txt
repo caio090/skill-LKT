@@ -1,0 +1,13 @@
+ÍNDICE DE ARQUIVOS — <nome do workspace>
+
+Atualizado em: <data>
+
+Formato de cada linha:
+<data> | <nome do arquivo> | <formato> | <categoria> | <resumo de uma linha>
+
+Exemplo:
+2026-08-05 | manual-de-marca.pdf | PDF | marca | Manual de identidade visual completo, recebido do cliente.
+
+
+ARQUIVOS
+- (nenhum arquivo registrado ainda)

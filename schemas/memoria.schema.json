@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Entrada de memória",
+  "description": "Formato de uma entrada de memória (decisão, aprendizado ou fato registrado) — usado em _memoria/decisoes/decisoes.md, _memoria/aprendizados/aprendizados.md e nos arrays de workspace.schema.json. Nunca sobrescrever fato antigo sem histórico.",
+  "type": "object",
+  "required": [
+    "conteudo",
+    "fonte",
+    "data"
+  ],
+  "properties": {
+    "conteudo": {
+      "type": "string"
+    },
+    "fonte": {
+      "type": "string",
+      "description": "De onde veio a informação (usuário, arquivo, sistema, inferência explícita)."
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "autor_ou_origem": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nivel_confianca": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "baixo",
+        "medio",
+        "alto",
+        null
+      ]
+    },
+    "conflito": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Descrição do conflito com informação anterior, se houver."
+    },
+    "decisao_tomada": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

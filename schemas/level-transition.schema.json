@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Transição de nível",
+  "description": "Registro histórico de mudança de nível (avanço ou recuo) — nunca altera avaliação antiga, só registra a transição.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "dimension",
+    "de_nivel",
+    "para_nivel",
+    "data",
+    "motivo"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "dimension": {
+      "type": "string"
+    },
+    "de_nivel": {
+      "type": "string"
+    },
+    "para_nivel": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "motivo": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "avanco",
+        "recuo",
+        "revisao-humana"
+      ]
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsavel_papel": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

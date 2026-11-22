@@ -1,0 +1,18 @@
+{
+  "name": "sistema-lkt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema LKT: núcleo de entendimento, estruturação, projeção, planejamento, documentação e acompanhamento de empresas, clientes e projetos — skills, memória, schemas e ferramentas de validação/instalação para Claude Code.",
+  "scripts": {
+    "validar": "node tools/validar.js",
+    "instalar": "node tools/instalar-sistema-lkt.js",
+    "test": "node tests/run-tests.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "docx": "^9.7.1",
+    "jszip": "^3.10.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Perda",
+  "description": "Usado por rendimento-e-desperdicio e cmv-real-e-teorico.",
+  "type": "object",
+  "properties": {
+    "perda_id": { "type": "string" },
+    "produto_ou_ingrediente_id": { "type": "string" },
+    "causa": {
+      "type": "string",
+      "enum": ["limpeza", "corte", "coccao", "validade", "erro", "sobra", "porcao_acima_do_padrao", "outro"]
+    },
+    "quantidade": { "type": "number" },
+    "unidade": { "type": "string" },
+    "custo_unitario": { "type": "number" },
+    "valor_da_perda": { "type": "number", "description": "quantidade × custo_unitario" },
+    "data": { "type": "string", "format": "date" },
+    "evidencia": { "type": ["string", "null"], "description": "o que comprova a causa apontada" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["perda_id", "produto_ou_ingrediente_id", "causa", "quantidade", "valor_da_perda", "data", "fonte"]
+}

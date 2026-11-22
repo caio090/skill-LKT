@@ -1,0 +1,13 @@
+{
+  "rascunho_de_referencia": true,
+  "aviso": "Exemplo de referência — não é regra oficial até validado com uso real. Ver README.md.",
+  "id": "perfil-maturidade-digital-estruturada",
+  "nome": "Estrutura de conteúdo organizada",
+  "level_definition_id": "nivel-estruturada",
+  "obrigatorio": ["Calendário de conteúdo", "Processo de aprovação definido"],
+  "recomendado": ["Relatório mensal básico", "Identidade visual revisada"],
+  "opcional": ["Banco de legendas prontas", "Biblioteca de referências visuais"],
+  "futuro": ["Integração com CRM (nível 'integrada')", "Automação de publicação"],
+  "nao_incluso": ["Tráfego pago", "Produção audiovisual completa"],
+  "fase_comercial": "implantacao"
+}

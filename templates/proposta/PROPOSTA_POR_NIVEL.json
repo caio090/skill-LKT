@@ -1,0 +1,28 @@
+{
+  "cliente_ou_projeto": "",
+  "contexto": "",
+  "fase_comercial": "estrutura-inicial|implantacao|evolucao|escala-futura",
+  "entregas": {
+    "obrigatorias": [],
+    "recomendadas": []
+  },
+  "prazo": "",
+  "investimento": {
+    "valor": 0,
+    "moeda": "BRL",
+    "condicoes": ""
+  },
+  "nao_incluso": [],
+  "possibilidades_futuras": [],
+  "proximos_passos": [],
+  "_nunca_incluir": [
+    "tarefa técnica interna detalhada",
+    "risco interno",
+    "margem",
+    "custo por colaborador",
+    "nota confidencial",
+    "pontuação técnica completa",
+    "caso de outro cliente",
+    "raciocínio privado"
+  ]
+}

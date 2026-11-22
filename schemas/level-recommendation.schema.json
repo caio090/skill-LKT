@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recomendação de nível",
+  "description": "Nível recomendado, lacunas e plano — nunca recomenda o nível mais alto por padrão.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "dimension",
+    "nivel_atual",
+    "nivel_recomendado",
+    "lacunas",
+    "proxima_revisao"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dimension": {
+      "type": "string"
+    },
+    "nivel_atual": {
+      "type": "string"
+    },
+    "nivel_recomendado": {
+      "type": "string"
+    },
+    "lacunas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prioridades": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entregaveis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tarefas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "papeis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prazo_projetado": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "custo_projetado": {
+      "type": "object",
+      "properties": {
+        "conservador": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "base": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "agressivo": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "cenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "criterios_de_aceite": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proxima_revisao": {
+      "type": "string",
+      "description": "Data ou gatilho (ex.: 'ao concluir a fase 1')."
+    }
+  }
+}

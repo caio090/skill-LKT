@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Avaliação de nível",
+  "description": "Classificação de um workspace/projeto numa dimensão, baseada em evidências.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "dimension",
+    "level_set_id",
+    "nivel_atual",
+    "confianca",
+    "data",
+    "versao_da_regra"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dimension": {
+      "type": "string"
+    },
+    "level_set_id": {
+      "type": "string"
+    },
+    "nivel_atual": {
+      "type": "string",
+      "description": "Código do nível (level-definition.codigo), ou 'provisorio' quando não houver evidência suficiente."
+    },
+    "pontuacao": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confianca": {
+      "type": "string",
+      "enum": [
+        "confirmado",
+        "provavel",
+        "parcial",
+        "incerto",
+        "sem-dados"
+      ]
+    },
+    "justificativa": {
+      "type": "string",
+      "description": "Explicação em linguagem simples — nunca só o código do nível."
+    },
+    "conflitos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "informacoes_faltantes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avaliador": {
+      "type": "string",
+      "description": "Papel de quem avaliou (ex.: 'sistema', 'responsável técnico')."
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "versao_da_regra": {
+      "type": "string"
+    },
+    "revisao_humana": {
+      "type": "object",
+      "properties": {
+        "confirmado": {
+          "type": "boolean"
+        },
+        "alterado_para": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "motivo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "responsavel_papel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "data": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    }
+  }
+}

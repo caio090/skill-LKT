@@ -1,0 +1,52 @@
+CAMPANHA — <nome>
+
+OBJETIVO
+...
+
+PÚBLICO
+...
+
+OFERTA
+...
+
+CANAIS
+...
+
+PERÍODO
+início: ... | fim: ...
+
+ORÇAMENTO
+...
+
+ATIVOS E CONTEÚDOS
+...
+
+PÁGINA ASSOCIADA
+...
+
+FUNIL ASSOCIADO
+...
+
+CTA PRINCIPAL
+...
+
+MÉTRICAS E METAS
+...
+
+RESPONSÁVEIS POR PAPEL
+...
+
+DEPENDÊNCIAS E RISCOS
+...
+
+STATUS
+planejamento | produção | aguardando aprovação | ativa | encerrada
+
+RESULTADOS (preencher após ativação)
+...
+
+APRENDIZADOS (preencher no encerramento)
+...
+
+ONDE SALVAR
+workspaces/<tipo>/<slug>/[projetos/<projeto>/]04-comercial/CAMPANHA.md

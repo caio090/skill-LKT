@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Canal de venda",
+  "type": "object",
+  "properties": {
+    "canal_id": { "type": "string" },
+    "nome": { "type": "string", "description": "ex.: balcão, retirada, delivery próprio, marketplace X" },
+    "taxa_percentual": { "type": "number", "default": 0 },
+    "comissao_percentual": { "type": "number", "default": 0 },
+    "taxa_fixa": { "type": "number", "default": 0 },
+    "fonte": { "type": "string" }
+  },
+  "required": ["canal_id", "nome", "fonte"]
+}

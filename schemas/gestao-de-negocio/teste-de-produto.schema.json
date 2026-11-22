@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Teste de produto",
+  "description": "Usado pelo template TESTE-DE-PRODUTO.md e pelo workflow produto-e-engenharia-de-cardapio.",
+  "type": "object",
+  "properties": {
+    "teste_id": { "type": "string" },
+    "hipotese": { "type": "string" },
+    "objetivo": { "type": "string" },
+    "publico": { "type": "string" },
+    "produto_id": { "type": "string" },
+    "preco": { "type": "number" },
+    "custo": { "type": "number" },
+    "canal_id": { "type": "string" },
+    "duracao_dias": { "type": "number" },
+    "quantidade_minima": { "type": ["number", "null"] },
+    "campanha_id": { "type": ["string", "null"] },
+    "orcamento": { "type": ["number", "null"] },
+    "capacidade_operacional": { "type": ["string", "null"] },
+    "indicador_principal": { "type": "string" },
+    "indicadores_auxiliares": { "type": "array", "items": { "type": "string" } },
+    "resultado": { "type": ["string", "null"] },
+    "decisao": {
+      "type": ["string", "null"],
+      "enum": ["manter", "ajustar", "escalar", "pausar", "retirar", "testar_novamente", null]
+    },
+    "fonte": { "type": "string" }
+  },
+  "required": ["teste_id", "hipotese", "objetivo", "produto_id", "indicador_principal", "fonte"]
+}

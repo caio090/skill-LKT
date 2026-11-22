@@ -1,0 +1,148 @@
+SISTEMA LKT
+O que é, para quem serve e como funciona
+
+
+O QUE É
+
+O Sistema LKT é um jeito organizado de entender, planejar, documentar e
+acompanhar uma empresa, um cliente ou um projeto. Ele não substitui
+quem toma as decisões — ele ajuda a organizar as informações, mostrar o
+que já está claro, apontar o que falta, e guardar tudo de um jeito que
+não se perde e pode ser reaproveitado depois.
+
+
+PARA QUEM SERVE
+
+- Para uma empresa que quer organizar a própria operação.
+- Para uma agência ou consultoria que atende vários clientes.
+- Para um grupo que tem várias empresas ou projetos.
+- Para um profissional que estrutura projetos para terceiros.
+
+Não é preciso saber termos técnicos para usar. Você conta o que precisa
+do seu jeito, e o sistema organiza.
+
+
+COMO FUNCIONA
+
+Você conversa, cola mensagens, anexa documentos ou grava um áudio
+contando o que quer organizar ou criar. O sistema:
+
+1. Organiza o que você contou.
+2. Mostra o que já está claro e o que ainda falta.
+3. Monta a estrutura certa para aquele projeto (nem toda informação
+   precisa de todas as pastas — só o que faz sentido).
+4. Ajuda a planejar, documentar, e acompanhar o andamento.
+5. Guarda o que foi decidido, por quê, quem é responsável por cada
+   parte, o que vai ser entregue e como isso será medido.
+
+
+MODOS DE USO
+
+- Empresa única: você organiza a sua própria empresa.
+- Agência, consultoria ou prestador: você organiza vários clientes
+  dentro da mesma instalação, cada um isolado dos outros.
+- Grupo, holding ou portfólio: você organiza várias empresas
+  relacionadas e projetos compartilhados entre elas.
+
+Você pode começar num modo e mudar depois — nada fica travado. Também é
+possível separar um cliente numa instalação própria a qualquer momento,
+sem reconstruir tudo de novo.
+
+
+MÉTODO
+
+Todo projeto passa, no que for necessário, por: entender → organizar →
+classificar → diagnosticar → planejar → definir prioridade agora e
+depois → definir escopo e entregas → definir quem é responsável por
+cada parte → identificar dependências e custos externos → precificar
+→ projetar cenários → executar → validar → medir → documentar → guardar
+o aprendizado para o próximo projeto.
+
+O Sistema LKT organiza esse fluxo. Ele não substitui o processo técnico
+de cada especialidade — design, audiovisual, tráfego, desenvolvimento,
+financeiro, contabilidade, vendas, logística e atendimento continuam
+com os processos próprios de cada área. O sistema conecta tudo isso em
+torno de um projeto compreensível.
+
+
+MÓDULOS
+
+O sistema tem módulos por área: negócio, projetos, financeiro,
+marketing, comercial, atendimento, operação, logística, conhecimento e
+tecnologia. Nenhum projeto é obrigado a usar todos os módulos — só os
+que fizerem sentido para aquele caso, conforme o diagnóstico, a
+maturidade e a capacidade real de quem está operando.
+
+Por exemplo: CRM não é o primeiro passo obrigatório de todo projeto.
+Antes dele, geralmente é preciso ter uma oferta compreensível, um canal
+de atendimento funcionando e um volume mínimo de contatos.
+
+
+PROCESSOS, FUNIS, PIPELINES E CAMPANHAS
+
+O sistema não chama tudo de "funil". Ele diferencia:
+
+- Processo: o que a empresa faz, em que ordem.
+- Fluxo de trabalho: a ordem das tarefas do dia a dia (quem faz o quê).
+- Funil: quantas pessoas passam por cada etapa até o resultado final.
+- Pipeline: onde cada oportunidade está agora.
+- Campanha: uma ação organizada com prazo, canais e orçamento.
+- Jornada: a experiência completa da pessoa com a empresa.
+
+Ver docs/ENTENDA_FUNIL_PIPELINE_PROCESSO.txt para exemplos simples de
+cada um.
+
+
+PROJEÇÕES
+
+O sistema ajuda a projetar cenários (financeiro, comercial, marketing,
+operacional, logístico e de projeto). Toda projeção mostra os dados
+usados, as hipóteses, as limitações e o nível de confiança — nunca é
+apresentada como garantia. Um cenário conservador, um cenário base e um
+cenário mais otimista, sempre que fizer sentido.
+
+
+ARQUIVOS
+
+O sistema decide o formato certo pelo uso: texto simples (.txt) para
+leitura fácil e conteúdo copiável, Markdown para documentação técnica,
+JSON para dados estruturados, planilha para tabelas e números, DOCX
+para propostas e contratos editáveis, PPTX para apresentações, PDF para
+a versão final. Cada arquivo gerado informa nome, formato, finalidade,
+caminho e próxima ação.
+
+
+WORKSPACES
+
+Cada empresa, cliente ou projeto interno vive num "workspace" — uma
+pasta isolada com seu próprio contexto, diagnóstico, planejamento,
+financeiro, entregas e relatórios. Nada de um workspace se mistura com
+outro, nem com a memória geral da instalação.
+
+
+IMPLANTAÇÃO NÃO É CONTINUIDADE
+
+Um projeto com começo, meio e fim (por exemplo, criar um site ou montar
+uma campanha) não vira suporte permanente automaticamente. Manutenção,
+nova edição, nova campanha ou continuidade são tratadas como uma nova
+fase ou um novo contrato, a não ser que já estejam explicitamente
+incluídas desde o início.
+
+
+COMO INICIAR
+
+Abra INICIAR_AQUI.txt e responda às perguntas, uma de cada vez. Se
+preferir, pode simplesmente escrever "quero organizar uma empresa",
+"quero começar um projeto novo" ou contar a sua situação com suas
+próprias palavras.
+
+
+O QUE O SISTEMA NÃO FAZ SOZINHO
+
+- Não sobe nada para a internet, não publica e não faz deploy.
+- Não cria workspace novo sem confirmar com você antes.
+- Não inventa dado sobre uma empresa que não foi informado.
+- Não apresenta uma projeção como se fosse certeza.
+- Não executa ação crítica (excluir, enviar mensagem em massa, publicar,
+  mover dinheiro) sem confirmação explícita seguindo os limites de
+  autonomia definidos em docs/SEGURANCA_E_PERMISSOES.md.

@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Produto e precificação",
+  "description": "Formato normalizado de produto/ficha técnica para precificacao e calcular-cmv, permitindo qualquer quantidade de produtos sem uma aba por produto (diferente do padrão de 100 abas encontrado em planilhas legadas).",
+  "type": "object",
+  "properties": {
+    "produto_id": { "type": "string" },
+    "produto": { "type": "string" },
+    "categoria": { "type": ["string", "null"] },
+    "insumos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "insumo": { "type": "string" },
+          "quantidade": { "type": "number" },
+          "unidade": { "type": "string" },
+          "custo_unitario": { "type": "number" }
+        },
+        "required": ["insumo", "quantidade", "unidade", "custo_unitario"]
+      }
+    },
+    "rendimento": { "type": ["number", "null"], "description": "Quantas unidades a receita/lote rende" },
+    "custo_insumos": { "type": "number" },
+    "custo_embalagem": { "type": "number", "default": 0 },
+    "rateio_custo_fixo": { "type": "number", "default": 0 },
+    "impostos": { "type": "number", "default": 0 },
+    "taxa_cartao": { "type": "number", "default": 0 },
+    "taxa_delivery": { "type": "number", "default": 0 },
+    "outros_custos_variaveis": { "type": "number", "default": 0 },
+    "custo_total": { "type": "number" },
+    "markup_desejado": { "type": ["number", "null"] },
+    "preco_sugerido": { "type": ["number", "null"] },
+    "preco_praticado": { "type": ["number", "null"] },
+    "markup_aplicado": { "type": ["number", "null"] },
+    "margem_contribuicao": { "type": ["number", "null"] },
+    "ponto_equilibrio": { "type": ["number", "null"] },
+    "status": { "type": "string", "enum": ["ativo", "descontinuado", "em revisão"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["produto_id", "produto", "custo_total", "status", "fonte"]
+}

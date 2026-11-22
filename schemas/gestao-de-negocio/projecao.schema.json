@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Projeção de cenário",
+  "description": "Usado por projecao-financeira, integrado com o domínio de gestão de negócio (reajuste de preço, novo produto, novo combo, aumento de ticket, redução de desperdício, redução da lacuna de CMV, aumento de pedidos, nova unidade, equipamento, contratação, marketing, cupom, canal próprio, marketplace, expansão).",
+  "type": "object",
+  "properties": {
+    "projecao_id": { "type": "string" },
+    "tema": { "type": "string" },
+    "horizonte": { "type": "string", "enum": ["30_dias", "90_dias", "6_meses", "12_meses", "24_meses"] },
+    "premissas": { "type": "array", "items": { "type": "string" } },
+    "cenarios": {
+      "type": "object",
+      "properties": {
+        "conservador": { "type": "object" },
+        "provavel": { "type": "object" },
+        "otimista": { "type": "object" }
+      },
+      "required": ["conservador", "provavel", "otimista"]
+    },
+    "riscos": { "type": "array", "items": { "type": "string" } },
+    "fonte": { "type": "string" }
+  },
+  "required": ["projecao_id", "tema", "horizonte", "premissas", "cenarios", "fonte"]
+}

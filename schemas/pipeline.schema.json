@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pipeline",
+  "description": "Onde cada item/oportunidade está agora. Ver knowledge/projetos/ONTOLOGIA_PROCESSOS_FUNIS_PIPELINES.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "tipo_de_item",
+    "etapas",
+    "itens",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "tipo_de_item": {
+      "type": "string",
+      "description": "Ex.: oportunidade comercial, candidato, chamado, campanha."
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "etapa.schema.json"
+      }
+    },
+    "criterios_de_entrada": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "criterios_de_saida": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "etapa_atual",
+          "data_de_entrada"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "etapa_atual": {
+            "type": "string"
+          },
+          "data_de_entrada": {
+            "type": "string",
+            "format": "date"
+          },
+          "responsavel_papel": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "proxima_acao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "prazo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "prioridade": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "baixa",
+              "media",
+              "alta",
+              null
+            ]
+          },
+          "valor_esperado": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "probabilidade": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "ultima_interacao": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "risco": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "origem": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "historico": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "responsaveis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "automacoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metricas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sla": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ativo",
+        "pausado",
+        "arquivado"
+      ]
+    }
+  }
+}

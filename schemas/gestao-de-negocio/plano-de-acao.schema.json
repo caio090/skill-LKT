@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Plano de ação",
+  "description": "Usado por gestao-de-negocio e plano-estrategico — os 8/12 campos obrigatórios de toda recomendação do LKT System.",
+  "type": "object",
+  "properties": {
+    "acao_id": { "type": "string" },
+    "problema_principal": { "type": ["string", "null"] },
+    "evidencia": { "type": ["string", "null"] },
+    "causa_provavel": { "type": ["string", "null"] },
+    "informacao_faltante": { "type": ["string", "null"] },
+    "o_que_fazer": { "type": "string" },
+    "por_que_fazer": { "type": "string" },
+    "responsavel": { "type": "string" },
+    "custo_estimado": { "type": ["string", "number"] },
+    "prazo": { "type": "string" },
+    "indicador": { "type": "string" },
+    "risco": { "type": "string" },
+    "prioridade": { "type": "string", "enum": ["alta", "media", "baixa"] },
+    "estado": { "type": "string", "enum": ["pendente", "em_andamento", "concluido", "cancelado"] }
+  },
+  "required": ["acao_id", "o_que_fazer", "por_que_fazer", "responsavel", "custo_estimado", "prazo", "indicador", "risco", "prioridade", "estado"]
+}

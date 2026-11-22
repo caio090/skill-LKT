@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Funil",
+  "description": "Quantidade e taxa de passagem entre etapas. Ver knowledge/projetos/ONTOLOGIA_PROCESSOS_FUNIS_PIPELINES.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "entidade_contada",
+    "etapas"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "objetivo": {
+      "type": "string"
+    },
+    "entidade_contada": {
+      "type": "string",
+      "description": "Ex.: visitante, lead, candidato."
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "origem": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "etapas": {
+      "type": "array",
+      "items": {
+        "$ref": "etapa.schema.json"
+      }
+    },
+    "eventos_de_conversao": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quantidade_por_etapa": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "taxa_por_etapa": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "taxa_total": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "perdas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "etapa": {
+            "type": "string"
+          },
+          "quantidade": {
+            "type": "number"
+          },
+          "hipotese": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "hipoteses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "campanha_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "projeto_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

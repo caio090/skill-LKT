@@ -1,0 +1,24 @@
+PIPELINE — <nome>
+
+O QUE É ACOMPANHADO (tipo de item)
+...
+
+ETAPAS
+1. ... — critério de entrada: ... — critério de saída: ...
+2. ...
+
+ITENS
+- <item> | etapa atual: ... | responsável: ... | próxima ação: ... | prazo: ... | prioridade: ...
+
+AUTOMAÇÕES PERMITIDAS
+...
+
+O QUE NÃO CONFUNDIR
+Pipeline mostra onde cada item está agora — não é a taxa agregada de
+conversão (isso é funil).
+
+ONDE SALVAR
+workspaces/<tipo>/<slug>/[projetos/<projeto>/]04-comercial/PIPELINE.md
+
+PRÓXIMO PASSO
+automatizar-fluxo (se alguma transição virar automação)

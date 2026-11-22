@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Produto (catálogo)",
+  "description": "Cadastro geral do produto — a ficha técnica (ficha-tecnica.schema.json) é o detalhamento de custo/receita deste produto.",
+  "type": "object",
+  "properties": {
+    "produto_id": { "type": "string" },
+    "nome": { "type": "string" },
+    "categoria_id": { "type": ["string", "null"] },
+    "funcao_estrategica": {
+      "type": "string",
+      "enum": ["heroi", "entrada", "margem", "imagem", "combo", "sazonal", "outro"]
+    },
+    "preco_praticado": { "type": ["number", "null"] },
+    "disponivel": { "type": "boolean", "default": true },
+    "foto": { "type": ["string", "null"] },
+    "descricao": { "type": ["string", "null"] },
+    "fonte": { "type": "string" }
+  },
+  "required": ["produto_id", "nome", "funcao_estrategica", "fonte"]
+}

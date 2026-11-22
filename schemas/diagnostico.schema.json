@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Diagnóstico",
+  "description": "Resultado da skill diagnostico-empresarial — corresponde a .../01-diagnostico/DIAGNOSTICO.md.",
+  "type": "object",
+  "required": [
+    "workspace_id",
+    "pilares",
+    "data"
+  ],
+  "properties": {
+    "workspace_id": {
+      "type": "string"
+    },
+    "projeto_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pilares": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nome",
+          "o_que_existe",
+          "o_que_falta"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string",
+            "enum": [
+              "negocio",
+              "oferta",
+              "publico",
+              "marca",
+              "marketing",
+              "presenca-digital",
+              "conteudo",
+              "comercial",
+              "atendimento",
+              "financeiro",
+              "operacao",
+              "logistica",
+              "equipe-por-papeis",
+              "tecnologia",
+              "dados",
+              "riscos"
+            ]
+          },
+          "o_que_existe": {
+            "type": "string"
+          },
+          "o_que_falta": {
+            "type": "string"
+          },
+          "evidencia": {
+            "type": "string"
+          },
+          "nota": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 5
+          },
+          "criterio_nota": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Obrigatório se 'nota' estiver preenchida."
+          }
+        }
+      }
+    },
+    "pilares_fora_de_escopo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string"
+          },
+          "motivo": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "modelo_identificado": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "processo",
+        "fluxo-de-trabalho",
+        "funil",
+        "pipeline",
+        "campanha",
+        "jornada",
+        null
+      ]
+    },
+    "prioridade_agora": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prioridade_depois": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

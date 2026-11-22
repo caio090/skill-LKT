@@ -1,0 +1,40 @@
+FUNIL — <nome>
+
+RESULTADO FINAL
+...
+
+ENTIDADE CONTADA
+...
+
+PERÍODO
+...
+
+ETAPAS (com evento que comprova o avanço)
+1. ... — evento: ...
+2. ... — evento: ...
+
+QUANTIDADE POR ETAPA
+...
+
+TAXA POR ETAPA
+...
+
+TAXA TOTAL
+...
+
+MAIOR PONTO DE PERDA
+...
+
+CAMPANHA ASSOCIADA
+...
+
+O QUE NÃO CONFUNDIR
+Funil mede quantidade e taxa de passagem — não é onde cada oportunidade
+individual está agora (isso é pipeline) nem a lista de tarefas internas
+(isso é fluxo de trabalho).
+
+ONDE SALVAR
+workspaces/<tipo>/<slug>/[projetos/<projeto>/]02-modelagem/FUNIL.md
+
+PRÓXIMO PASSO
+analisar-conversao (gargalo e recomendação)

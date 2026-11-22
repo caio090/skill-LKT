@@ -1,0 +1,18 @@
+RESUMO DE ARQUIVO PROCESSADO
+
+Nome original: ...
+Formato: ...
+Recebido em: ...
+Origem: (quem enviou / de onde veio)
+
+CONTEÚDO ÚTIL EXTRAÍDO
+...
+
+CLASSIFICAÇÃO
+(categoria de biblioteca ou pasta do workspace)
+
+O QUE ENTRA NA MEMÓRIA
+- ... (só depois de confirmar com o usuário)
+
+PENDÊNCIAS SOBRE ESTE ARQUIVO
+- ...

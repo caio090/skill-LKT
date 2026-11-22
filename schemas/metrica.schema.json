@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Métrica",
+  "description": "Definição de um indicador medido — ver catalogo/indicadores/.",
+  "type": "object",
+  "required": [
+    "id",
+    "nome",
+    "formula"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "formula": {
+      "type": "string"
+    },
+    "fonte_de_dado": {
+      "type": "string"
+    },
+    "frequencia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "workspace_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "valor_atual": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "meta": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "data_medicao": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    }
+  }
+}

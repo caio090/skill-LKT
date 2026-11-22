@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Manifesto de fontes (notebook-lm)",
+  "description": "Um por dossiê (empresa ou projeto). Ver .claude/skills/notebook-lm/SKILL.md.",
+  "type": "object",
+  "required": ["workspace_id", "document_type", "generated_at", "version", "status", "source_count", "sources"],
+  "properties": {
+    "workspace_id": { "type": "string" },
+    "company_id": { "type": ["string", "null"] },
+    "project_id": { "type": ["string", "null"] },
+    "document_type": { "type": "string", "enum": ["company", "project"] },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "type": "string", "enum": ["current", "outdated", "generating", "error"] },
+    "source_count": { "type": "integer" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "type", "title", "modified_at", "hash", "scope", "confidentiality", "included", "confidence"],
+        "properties": {
+          "path": { "type": "string" },
+          "type": { "type": "string" },
+          "title": { "type": "string" },
+          "modified_at": { "type": "string", "format": "date-time" },
+          "hash": { "type": "string" },
+          "scope": { "type": "string", "enum": ["company", "project", "shared"] },
+          "confidentiality": { "type": "string", "enum": ["normal", "restricted", "sensitive"] },
+          "included": { "type": "boolean" },
+          "reason": { "type": "string" },
+          "extracted_sections": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "string", "enum": ["confirmed", "partial", "uncertain"] }
+        }
+      }
+    },
+    "excluded_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "descricao": { "type": "string" },
+          "fontes_envolvidas": { "type": "array", "items": { "type": "string" } },
+          "resolucao": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  }
+}

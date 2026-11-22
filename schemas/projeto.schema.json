@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Projeto",
+  "description": "Corresponde ao PROJETO.md de workspaces/<tipo>/<slug>/projetos/<projeto>/ ou workspaces/projetos-internos/<projeto>/.",
+  "type": "object",
+  "required": [
+    "id",
+    "workspace_id",
+    "nome",
+    "objetivo",
+    "estado"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "null quando for projeto interno sem workspace por cima."
+    },
+    "nome": {
+      "type": "string"
+    },
+    "tipo_projeto": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "empresa",
+          "cliente",
+          "campanha",
+          "site",
+          "landing-page",
+          "evento",
+          "produto",
+          "servico",
+          "infoproduto",
+          "financeiro",
+          "comercial",
+          "conteudo",
+          "implantacao-de-sistema",
+          "logistico",
+          "interno"
+        ]
+      }
+    },
+    "objetivo": {
+      "type": "string"
+    },
+    "entregas_previstas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsavel": {
+      "type": "object",
+      "required": [
+        "papel"
+      ],
+      "properties": {
+        "papel": {
+          "type": "string"
+        },
+        "nome": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "prazo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "orcamento": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "indicador_sucesso": {
+      "type": "string"
+    },
+    "modelo_aplicavel": {
+      "type": "string",
+      "enum": [
+        "processo",
+        "fluxo-de-trabalho",
+        "funil",
+        "pipeline",
+        "campanha",
+        "jornada",
+        "nenhum-ainda"
+      ]
+    },
+    "dependencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "custos_externos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "em contexto",
+        "em diagnóstico",
+        "em execução",
+        "em entrega",
+        "concluído",
+        "pausado",
+        "cancelado"
+      ]
+    },
+    "historico_estado": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "format": "date"
+          },
+          "estado": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Definição de nível",
+  "description": "Um nível dentro de um conjunto (schemas/level-set.schema.json). Ver knowledge/niveis/COMO_FUNCIONAM_OS_NIVEIS.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "level_set_id",
+    "codigo",
+    "ordem",
+    "nome",
+    "objetivo",
+    "versao",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "level_set_id": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "objetivo": {
+      "type": "string"
+    },
+    "quando_aplicar": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quando_nao_aplicar": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "criterios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entregaveis_minimos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entregaveis_opcionais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "itens_nao_inclusos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tarefas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "papeis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prazo_minimo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prazo_maximo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "custo_minimo": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custo_maximo": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "moeda": {
+      "type": "string",
+      "default": "BRL"
+    },
+    "criterios_de_validacao": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "indicadores": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riscos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "restricoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "casos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Referências a casos anteriores anonimizados — ver seção 'Casos e aprendizados' em knowledge/niveis/."
+    },
+    "aprendizados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "templates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "condicoes_de_avanco": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "condicoes_de_recuo": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gatilhos_de_revisao": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "versao": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "rascunho",
+        "ativo",
+        "descontinuado"
+      ]
+    }
+  }
+}

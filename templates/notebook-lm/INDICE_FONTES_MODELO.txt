@@ -1,0 +1,18 @@
+ÍNDICE DE FONTES — <empresa|projeto>
+
+Gerado em: <data ISO>
+Versão do dossiê: <N>
+
+FONTES INCLUÍDAS (<contagem>)
+- <caminho> | <tipo> | modificado em <AAAA-MM-DD> | escopo: <company|project|shared> | confiança: <confirmed|partial|uncertain>
+
+FONTES EXCLUÍDAS (<contagem>)
+- <caminho> | motivo: <motivo>
+
+CONFLITOS ENCONTRADOS (<contagem, se houver>)
+- <descrição do conflito>
+
+---
+Este arquivo é gerado automaticamente por
+tools/notebook-lm/publicar-dossie.js a partir de MANIFESTO_FONTES.json
+— não editar manualmente (a próxima geração sobrescreve).

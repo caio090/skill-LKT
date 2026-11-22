@@ -1,0 +1,36 @@
+{
+  "_aviso": "Exemplo de referência para o contrato de dados dos níveis — ver docs/CONTRATO_DE_DADOS_DOS_NIVEIS.md. Não é dado real de nenhum cliente.",
+  "id": "rec-exemplo-001",
+  "workspace_id": "EXEMPLO",
+  "project_id": "EXEMPLO",
+  "dimension": "maturidade-digital",
+  "nivel_atual": "base",
+  "nivel_recomendado": "estruturada",
+  "versao_da_regra": "1.0.0",
+  "lacunas": [
+    "Não existe calendário de conteúdo",
+    "Não existe processo de aprovação definido"
+  ],
+  "prioridades": [
+    "Montar calendário de conteúdo",
+    "Definir fluxo de aprovação"
+  ],
+  "entregaveis": ["Calendário de conteúdo", "Processo de aprovação"],
+  "tarefas": ["Montar calendário", "Definir fluxo de aprovação"],
+  "dependencias": [],
+  "papeis": ["responsável por conteúdo", "responsável pela aprovação"],
+  "prazo_projetado": "3 a 6 semanas",
+  "custo_projetado": {
+    "conservador": 1500,
+    "base": 3000,
+    "agressivo": 5000
+  },
+  "cenarios": [
+    "Conservador: só calendário, sem processo formal de aprovação.",
+    "Base: calendário + processo de aprovação definido.",
+    "Agressivo: calendário + processo + relatório mensal básico."
+  ],
+  "riscos": ["Processo pode ser abandonado sem responsável fixo"],
+  "criterios_de_aceite": ["Calendário seguido por 2 ciclos consecutivos"],
+  "proxima_revisao": "Ao concluir o segundo ciclo do calendário, ou em 60 dias"
+}

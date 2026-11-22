@@ -1,0 +1,28 @@
+{
+  "workspace_id": "",
+  "company_id": "",
+  "project_id": "",
+  "document_type": "company|project",
+  "generated_at": "",
+  "version": 1,
+  "status": "current|outdated|generating|error",
+  "source_count": 0,
+  "sources": [
+    {
+      "path": "",
+      "type": "",
+      "title": "",
+      "modified_at": "",
+      "hash": "",
+      "scope": "company|project|shared",
+      "confidentiality": "normal|restricted|sensitive",
+      "included": true,
+      "reason": "",
+      "extracted_sections": [],
+      "confidence": "confirmed|partial|uncertain"
+    }
+  ],
+  "excluded_sources": [],
+  "conflicts": [],
+  "warnings": []
+}

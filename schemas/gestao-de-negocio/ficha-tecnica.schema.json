@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ficha técnica",
+  "description": "Usado pela skill ficha-tecnica. Permite qualquer quantidade de produtos sem uma aba por produto.",
+  "type": "object",
+  "properties": {
+    "produto_id": { "type": "string" },
+    "produto": { "type": "string" },
+    "categoria": { "type": "string", "enum": ["heroi", "entrada", "margem", "sazonal", "outro"] },
+    "versao": { "type": "integer", "minimum": 1 },
+    "data_versao": { "type": "string", "format": "date" },
+    "ingredientes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ingrediente_id": { "type": "string" },
+          "quantidade": { "type": "number" },
+          "unidade": { "type": "string" }
+        },
+        "required": ["ingrediente_id", "quantidade", "unidade"]
+      }
+    },
+    "peso_bruto_total": { "type": ["number", "null"] },
+    "peso_liquido_total": { "type": ["number", "null"] },
+    "peso_final_preparado": { "type": ["number", "null"] },
+    "peso_padrao_porcao": { "type": ["number", "null"] },
+    "numero_porcoes": { "type": ["number", "null"] },
+    "custo_embalagem": { "type": "number", "default": 0 },
+    "mao_de_obra_direta": { "type": "number", "default": 0 },
+    "custo_total_receita": { "type": "number" },
+    "custo_por_porcao": { "type": "number" },
+    "fonte": { "type": "string" }
+  },
+  "required": ["produto_id", "produto", "versao", "data_versao", "custo_total_receita", "custo_por_porcao", "fonte"]
+}
