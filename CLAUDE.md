@@ -71,7 +71,9 @@ skill for necessária, encadear na ordem correta.
 
 Para criar ou complementar prompts de programação no padrão LKT, usar `.claude/skills/promptificacao-programacao-lkt/SKILL.md` e seguir suas regras de identificação, contexto, execução e relatório.
 
-Para trabalhos de design gráfico, identidade, peças visuais, artes para redes sociais,\ncartazes, anúncios, imagens, produtos e refinamento visual, carregar\n`.claude/skills/vidigal-png/SKILL.md` e sua referência completa V22 R10.\nA pesquisa visual principal segue a atualização R10: Pinterest, termo da\npeça/produto + `social media`, três referências coerentes e fusão criativa.\nPreservar Briefing Lock, Asset Integrity, Anti-Chat e Quality Control.\n\nPara criação ou alteração de páginas, sites, landing pages, dashboards,
+Para trabalhos de design gráfico, identidade, peças visuais, artes para redes sociais,\ncartazes, anúncios, imagens, produtos e refinamento visual, carregar\n`.claude/skills/vidigal-png/SKILL.md` e sua referência completa V22 R10.\nA pesquisa visual principal segue a atualização R10: Pinterest, termo da\npeça/produto + `social media`, três referências coerentes e fusão criativa.\nPreservar Briefing Lock, Asset Integrity, Anti-Chat e Quality Control.\n\nPara qualquer trabalho de tráfego pago, mídia, campanhas, funil, orçamento, Meta Ads, Google Ads, criativos para performance, tracking, Pixel/CAPI, leads ou remarketing, carregar obrigatoriamente `.claude/skills/trafego-pago-lkt/SKILL.md`. A skill deve partir do objetivo de negócio, orçamento real e estágio do funil antes de escolher objetivo da plataforma. Com verba pequena, priorizar simplificação e concentração em vez de pulverizar campanha/conjunto. Quando houver criativo visual a produzir ou refazer, encadear `trafego-pago-lkt` → `vidigal-png`; quando houver copy final para anúncio, aplicar `texto-natural-pt-br`. Nunca publicar ou aumentar gasto sem autorização explícita.
+
+Para criação ou alteração de páginas, sites, landing pages, dashboards,
 portais ou interfaces, usar obrigatoriamente, nessa ordem:
 
 1. `pagina-e-site`
