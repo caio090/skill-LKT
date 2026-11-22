@@ -13,7 +13,7 @@ skill(s) usada(s) e memória consultada.
 | Páginas, sites, landing pages, portais | `modules/paginas-e-sites` | `pagina-e-site` → `design-front-end` → `texto-natural-pt-br` | marca, cliente |
 | Design gráfico, identidade, social media, arte, imagens, campanhas visuais e edição | `modules/conteudo` | `vidigal-png` | marca, preferencias, cliente, projeto | 
 | Conteúdo, roteiros, campanhas, calendário | `modules/conteudo` | _a definir na migração_ | marca, preferencias, cliente |
-| Tráfego pago | `modules/trafego-pago` | _a definir na migração_ | metricas, cliente |
+| Tráfego pago, Meta Ads, Google Ads, funil, orçamento, tracking e remarketing | `modules/trafego-pago` | `trafego-pago-lkt` | metricas, cliente, projeto |
 | CRM, leads, vendas, atendimento | `modules/crm` | _a definir na migração_ | cliente |
 | Financeiro (CAC, LTV, ROI, ROAS, margem) | `modules/financeiro` | _a definir na migração_ | metricas |
 | Prompts de programação e relatórios de execução | `modules/operacional` | `promptificacao-programacao-lkt` | preferencias, cliente, projeto |
