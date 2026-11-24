@@ -71,7 +71,7 @@ skill for necessária, encadear na ordem correta.
 
 Para criar ou complementar prompts de programação no padrão LKT, usar `.claude/skills/promptificacao-programacao-lkt/SKILL.md` e seguir suas regras de identificação, contexto, execução e relatório.
 
-Para trabalhos de design gráfico, identidade, peças visuais, artes para redes sociais,\ncartazes, anúncios, imagens, produtos e refinamento visual, carregar\n`.claude/skills/vidigal-png/SKILL.md` e sua referência completa V22 R11.\nA pesquisa visual principal segue a atualização R11, seção 33: Pinterest prioritário, termo da\npeça/produto + `social media`, fontes alternativas quando necessário, três referências verificadas e coerentes e fusão criativa.\nPreservar Briefing Lock, Asset Integrity, Anti-Chat e Quality Control.\n\nPara criação ou alteração de páginas, sites, landing pages, dashboards,
+Para trabalhos de design gráfico, identidade, peças visuais, artes para redes sociais,\ncartazes, anúncios, imagens, produtos e refinamento visual, carregar\n`.claude/skills/vidigal-png/SKILL.md` e sua referência completa V22 R12.\nA pesquisa visual principal segue a atualização R11, seção 33: Pinterest prioritário, termo da\npeça/produto + `social media`, fontes alternativas quando necessário, três referências verificadas e coerentes e fusão criativa.\nPreservar Briefing Lock, Asset Integrity, Anti-Chat e Quality Control. Aplicar Brand Scale Lock (14.1) desde o briefing, com limites dimensionais antes da geração e QC medido.\n\nPara criação ou alteração de páginas, sites, landing pages, dashboards,
 portais ou interfaces, usar obrigatoriamente, nessa ordem:
 
 1. `pagina-e-site`
