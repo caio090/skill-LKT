@@ -11,8 +11,8 @@ equivalente — a fonte completa e mais detalhada é [`CLAUDE.md`](CLAUDE.md).
 - Antes de qualquer tarefa, checar se existe skill relevante em
   `.claude/skills/` e segui-la.
 - Para design gráfico, social media, artes, imagens, identidade e refinamento,
-  carregar `vidigal-png` e sua referência integral V22 R11; a pesquisa visual
-  principal segue o protocolo adaptativo 3x1 da seção 33, com Pinterest prioritário e fontes alternativas verificadas.
+  carregar `vidigal-png` e sua referência integral V22 R12; a pesquisa visual
+  principal segue o protocolo adaptativo 3x1 da seção 33, com Pinterest prioritário e fontes alternativas verificadas. Aplicar Brand Scale Lock (14.1) antes do wireframe e da geração e validar a logo na peça real.
 - Para páginas, sites, landing pages, dashboards ou interfaces, encadear
   obrigatoriamente `pagina-e-site` → `design-front-end` →
   `texto-natural-pt-br`.
