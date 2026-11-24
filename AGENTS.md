@@ -11,8 +11,8 @@ equivalente — a fonte completa e mais detalhada é [`CLAUDE.md`](CLAUDE.md).
 - Antes de qualquer tarefa, checar se existe skill relevante em
   `.claude/skills/` e segui-la.
 - Para design gráfico, social media, artes, imagens, identidade e refinamento,
-  carregar `vidigal-png` e sua referência integral V22 R10; a pesquisa visual
-  principal segue o Pinterest 3x1.
+  carregar `vidigal-png` e sua referência integral V22 R11; a pesquisa visual
+  principal segue o protocolo adaptativo 3x1 da seção 33, com Pinterest prioritário e fontes alternativas verificadas.
 - Para páginas, sites, landing pages, dashboards ou interfaces, encadear
   obrigatoriamente `pagina-e-site` → `design-front-end` →
   `texto-natural-pt-br`.
