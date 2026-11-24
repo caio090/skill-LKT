@@ -1,4 +1,4 @@
-VIDIGAL PNG — V22 R11 — PESQUISA VISUAL ADAPTATIVA 3×1
+VIDIGAL PNG — V22 R12 — PESQUISA VISUAL ADAPTATIVA 3×1 E BRAND SCALE LOCK
 SISTEMA DE DESIGN ASSISTIDO, PESQUISA VISUAL, DIREÇÃO DE ARTE, EXECUÇÃO E CONTROLE DE QUALIDADE
 
 ==================================================
@@ -69,6 +69,7 @@ PRINCÍPIOS SUPREMOS:
 16. Em peças com imagem principal, ela mantém o primeiro impacto; os textos e a marca respeitam a hierarquia definida nas seções 13 a 15.
 17. Headline e subheadline formam um bloco único; CTA e logo seguem o mesmo eixo mestre, em seus próprios limites.
 18. Regras obrigatórias não podem ser dispensadas por referência visual, conveniência, espaço vazio ou avaliação estética genérica. Somente instrução explícita do usuário altera o eixo ou a prioridade definidos.
+19. Toda logo autorizada exige Brand Scale Lock (14.1) desde o briefing, antes do wireframe e da geração; validar medidas na peça real.
 
 COMO APLICAR ESTE DOCUMENTO:
 - Seções 4 a 7: interpretar e congelar conteúdo e ativos.
@@ -1183,6 +1184,26 @@ LOGO:
 - proteção e contraste adequados;
 - nunca aumentada apenas porque existe espaço;
 - nunca usada para preencher vazio.
+
+14.1 BRAND SCALE LOCK — ESCALA DE MARCA DESDE O INÍCIO (R12)
+
+REGRA UNIVERSAL: LOGO É ASSINATURA, NÃO HEADLINE. A ESCALA DA MARCA É DECIDIDA ANTES DA GERAÇÃO, NÃO COMO CORREÇÃO OPCIONAL NO FINAL.
+
+Aplicar a toda peça visual com logo autorizada, inclusive campanhas, anúncios, posts, stories, cartazes e marcas conceituais. Não inserir logo em entregas sem autorização. Em apresentação de identidade ou quando o briefing definir a logo como protagonista, registrar a exceção.
+
+ETAPA 1 — BRIEFING E ASSET LOCK: identificar versão oficial, orientação, proporção visível, área de proteção, tamanho mínimo e contraste. Se a criação de marca for autorizada, resolver o ativo antes da arte e congelar sua versão. Preferir variante monocromática oficial quando coerente com a identidade; nunca recolorir ativo oficial sem autorização ou variante válida. Não acrescentar traços, selos, ornamentos ou textos à marca para preencher espaço.
+
+ETAPA 2 — PRÉ-PRODUÇÃO E WIREFRAME: determinar formato W × H, eixo mestre e área de assinatura. Medir somente o conteúdo visível da logo, excluindo transparência e margens do arquivo. Como ponto de partida para peças publicitárias com imagem protagonista, usar estes limites simultâneos de largura e altura visíveis:
+- horizontal: até 22% de W e 4% de H;
+- vertical ou empilhada: até 15% de W e 7% de H;
+- compacta: até 12% de W e 6% de H.
+São limites iniciais conservadores, não tamanhos mínimos universais. O manual, a legibilidade e a proteção prevalecem; justificar e registrar qualquer ampliação necessária. Não ampliar por conveniência ou por espaço disponível. Em 1080 × 1350, por exemplo, uma logo horizontal inicia com limites de 238 × 54 px, sem deformação. Calcular escala = mínimo(largura máxima/largura visível original, altura máxima/altura visível original). Se a escala tornar a marca ilegível, avaliar variante oficial simplificada ou recompor o bloco; nunca deformar.
+
+ETAPA 3 — PROMPT E EXECUÇÃO: incluir posição, eixo, dimensões máximas em pixels, cor autorizada, proteção e prioridade subordinada no prompt/ficha de composição desde a primeira geração. Nunca pedir apenas “logo pequena”. Preferir gerar a imagem com espaço negativo reservado e aplicar a logo congelada separadamente em composição, especialmente quando o gerador não garante escala, integridade ou alinhamento. Não regenerar toda a cena para corrigir apenas a assinatura quando edição localizada ou composição estiver disponível.
+
+ETAPA 4 — QC BLOQUEANTE: medir os limites visíveis na peça real, comparar com a ficha de composição e testar redução adicional de 15% a 25%. Avaliar leitura em miniatura, contraste, proporção, proteção, eixo comum com a headline e CTA e competição com a imagem. Escolher a menor escala que preserve leitura e identidade. Reprovar logo excessiva, deformada, recolorida sem autorização, deslocada do eixo, com ornamentos gratuitos ou aplicada como preenchimento. Corrigir e reinspecionar antes de aprovar. Se não houver capacidade de medir ou compor com precisão, declarar a limitação; não alegar conformidade medida.
+
+REGRA FINAL: A MARCA DEVE SER RECONHECÍVEL SEM DOMINAR A PEÇA. BRIEFING → ASSET LOCK → BRAND SCALE LOCK → WIREFRAME → PROMPT → COMPOSIÇÃO → QC.
 
 PREÇO:
 - deve integrar o bloco comercial;
@@ -2797,7 +2818,7 @@ Congelar:
 
 Nenhuma decisão visual começa antes do Briefing Lock estar claro.
 
-31.6 ETAPA 03 — ASSET INTEGRITY
+31.6 ETAPA 03 — ASSET INTEGRITY E BRAND SCALE LOCK
 
 Confirmar e travar:
 - logo;
@@ -2923,6 +2944,8 @@ A rota deve ser definida antes do layout final.
 
 31.13 ETAPA 10 — ARQUITETURA ANTES DA GERAÇÃO
 
+Aplicar os limites e a ficha de marca da seção 14.1 antes de montar o wireframe.
+
 Resolver internamente:
 - eixo mestre;
 - grid;
@@ -2980,6 +3003,8 @@ Se não melhorar leitura, agrupamento ou hierarquia, não usar.
 
 31.16 ETAPA 13 — MONTAGEM DO PROMPT FINAL
 
+Incluir explicitamente a ficha Brand Scale Lock (14.1) para toda logo autorizada.
+
 Somente depois das etapas anteriores, montar o prompt de geração.
 
 O prompt deve nascer de:
@@ -3029,6 +3054,8 @@ Perguntas obrigatórias:
 Se houver falha, corrigir antes de entregar.
 
 31.19 ETAPA 16 — QUALITY CONTROL BLOQUEANTE
+
+Conferir obrigatoriamente as medidas reais, integridade, proteção e eixo da logo conforme 14.1.
 
 Rodar QC completo.
 
